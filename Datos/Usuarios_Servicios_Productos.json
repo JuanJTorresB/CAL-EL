@@ -1,0 +1,41 @@
+{
+    "Usuarios" :
+    [
+        {
+            "Nombre_User" : "Daniela Andrea Lizarazo Lamus",
+            "Documento" : "1097494374",
+            "Rol" : "Admin",
+            "Edad" : "2006/02/6",
+            "Genero" : "F",
+            "Ciudad" : "Bucaramanga",
+            "Informacion_de_Contacto" : 
+            {
+                "Direccion_User" : "Calle 204A #40-194",
+                "Telefono_Celular" : "3204828077",
+                "Correo Electronico" : "Dani@gmail.com"
+            },
+            "Historial" :
+            {
+                "Categoria" : "Cliente Leal",
+                "Productos_Adquiridos" : ["Samsung J7"],
+                "Servicios_Adquiridos" : ["Claro Video"],
+                "Reclamaciones" : "",
+                "Sugerencias" : "",
+                "Test_de_Preferencias_Realizado" : false
+            },
+            "Test_de_Preferencias" :
+            {
+                
+            }
+
+        }
+    ],
+    "Productos" :
+    [
+
+    ],
+    "Servicios" :
+    [
+
+    ]
+}
