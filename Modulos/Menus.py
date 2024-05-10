@@ -1,7 +1,8 @@
-import Modulos.ManejoExcepiciones
-import Modulos.InicioSesion
+import Modulos.ManejoExcepiciones, Modulos.InicioSesion, Modulos.GestionUsuarios
 
-def Menu_Inicial():
+UBI_DATOS = "Datos/UsuariosServiciosProductos.json"
+
+def Menu_Inicial(Datos):
     while True:
         print("")
         print("*"*50)
@@ -41,7 +42,7 @@ def Eleccion_Numerica():
         Modulos.ManejoExcepiciones.LogExcepciones("Value Error", "23", "Menus.py")
     return(0)
 
-def MenuAdmin():
+def MenuAdmin(Datos):
     print("*"*50)
     print("")
     print("BIENVENIDO ADMIN".center(50))
@@ -68,7 +69,7 @@ def MenuAdmin():
         print("")
         choise = Eleccion_Numerica()           # Pide el input int
         if choise == 1:
-            MenuGestionarUsuarios()
+            MenuGestionarUsuarios(Datos)
         elif choise == 2:
             print(2)
         elif choise == 3:
@@ -83,7 +84,7 @@ def MenuAdmin():
         else:
             print("Valor Invalido")
             
-def MenuGestionarUsuarios():
+def MenuGestionarUsuarios(Datos):
     while True:
         print("")
         print("*"*50)
@@ -106,7 +107,7 @@ def MenuGestionarUsuarios():
         print("")
         choise = Eleccion_Numerica()           # Pide el input int
         if choise == 1:
-            print(1)
+            Datos = Modulos.GestionUsuarios.CrearPerfilesUsuarios(Datos)
         elif choise == 2:
             print(2)
         elif choise == 3:
