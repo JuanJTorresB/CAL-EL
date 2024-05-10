@@ -22,7 +22,7 @@
             "Nombre_User": "Juan Jose Torres Becerra",
             "Documento": "1092255555",
             "Rol": "User",
-            "Fecha_Nacimiento": "2006/02/6",
+            "Fecha_Nacimiento": "2006/02/06",
             "Genero": "F",
             "Ciudad": "Bucaramanga",
             "Informacion_de_Contacto": {
@@ -32,12 +32,26 @@
             },
             "Historial": {
                 "Categoria": "Cliente Leal",
-                "Reclamaciones": [
-                    ""
-                ],
-                "Sugerencias": [
-                    ""
-                ]
+                "Reclamaciones": [],
+                "Sugerencias": []
+            }
+        },
+        {
+            "Nombre_User": "Juan Alcachofa",
+            "Documento": "1097485632",
+            "Rol": "Admin",
+            "Fecha_Nacimiento": "2006/10/12",
+            "Genero": "F",
+            "Ciudad": "Bucaramanga",
+            "Informacion_de_Contacto": {
+                "Direccion_User": "Calle 204A #40-194",
+                "Telefono_Celular": "3204828077",
+                "Correo_Electronico": "Dani@gmail.com"
+            },
+            "Historial": {
+                "Categoria": "Cliente Leal",
+                "Reclamaciones": [],
+                "Sugerencias": []
             }
         }
     ],
@@ -49,9 +63,7 @@
             "Color": "Negro Noche",
             "Marca": "Xiaomi",
             "Precio": 799900,
-            "Adquirido_por": [
-                ""
-            ]
+            "Adquirido_por": []
         }
     ],
     "Servicios": [
@@ -60,9 +72,7 @@
             "Navegacion": 60,
             "Descripci\u00f3n": "Incluye: Llamadas y SMS Ilimitado Nal. Navegacion: 60 GB.Agotados los datos incluidos, tendr\u00e1 acceso a funcionalidades seleccionadas de Facebook App, Twitter y Chat de WhatsApp. No Incluye: Roaming Intnal, LDI,MMS, ni descarga de contenidos con costo, Apps incluidas: Claro Music, Claro Video ",
             "Precio": 42900,
-            "Adquirido_por": [
-                ""
-            ]
+            "Adquirido_por": []
         }
     ]
 }

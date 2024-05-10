@@ -1,4 +1,4 @@
-from Modulos.GestionUsuarios import PedirDocumento
+from Modulos.DatosYValidaciones import PedirDocumento
 import Modulos.Menus
 import json
 

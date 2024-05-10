@@ -1,38 +1,32 @@
 import Modulos.ManejoExcepiciones
+import Modulos.DatosYValidaciones
 
-def PedirDocumento():
-    while True:
-        try:
-            Documento_Ingresado = int(input("Ingrese un Documento\n> "))
-        except ValueError:
-            Modulos.ManejoExcepiciones.LogExcepciones("Value Error", "7", "GestionUsuarios")
-        else:
-            Documento_Ingresado = str(Documento_Ingresado)
-            if len(Documento_Ingresado) == 10:
-                return Documento_Ingresado
-            else:
-                print("Longitud Invalida".center(50, "="))
 
 def CrearPerfilesUsuarios(Datos):
-    Usuario = {}
-    Informacion_de_Contacto = {}
-    Historial = {}
-    Usuario["Nombre_User"] = "A"
-    Usuario["Documento"] = PedirDocumento()
-    Usuario["Rol"] = "Admin"
-    Usuario["Fecha_Nacimiento"] = "2006/02/6"
-    Usuario["Genero"] = "F"
-    Usuario["Ciudad"] = "Bucaramanga"
-    Informacion_de_Contacto["Direccion_User"] = "Calle 204A #40-194"
-    Informacion_de_Contacto["Telefono_Celular"] = "3204828077"
-    Informacion_de_Contacto["Correo_Electronico"] = "Dani@gmail.com"
-    Historial["Categoria"] = "Cliente Leal"
-    Historial["Reclamaciones"] = []
-    Historial["Sugerencias"] = []
-    Usuario["Informacion_de_Contacto"] = Informacion_de_Contacto
-    Usuario["Historial"] = Historial
-    Datos["Usuarios"].append(Usuario)
-    return Datos
+    while True:
+        Usuario = {}
+        Informacion_de_Contacto = {}
+        Historial = {}
+        Usuario["Nombre_User"] = str(input("Nombre del User\n> "))
+        Documento_Validado = Modulos.DatosYValidaciones.PedirDocumento()
+        if Modulos.DatosYValidaciones.DocumentoNoRepetido(Documento_Validado, Datos):
+            print("Documento Repetido")
+            break
+        Usuario["Documento"] = Documento_Validado
+        Usuario["Rol"] = Modulos.DatosYValidaciones.Validacion_Rol()
+        Usuario["Fecha_Nacimiento"] = Modulos.DatosYValidaciones.ValidacionFechaNacimiento()
+        Usuario["Genero"] = "F"
+        Usuario["Ciudad"] = "Bucaramanga"
+        Informacion_de_Contacto["Direccion_User"] = "Calle 204A #40-194"
+        Informacion_de_Contacto["Telefono_Celular"] = "3204828077"
+        Informacion_de_Contacto["Correo_Electronico"] = "Dani@gmail.com"
+        Historial["Categoria"] = "Cliente Leal"
+        Historial["Reclamaciones"] = []
+        Historial["Sugerencias"] = []
+        Usuario["Informacion_de_Contacto"] = Informacion_de_Contacto
+        Usuario["Historial"] = Historial
+        Datos["Usuarios"].append(Usuario)
+        return Datos
     
     """     "Nombre_User" : "Daniela Andrea Lizarazo Lamus",
             "Documento" : "1097494374",

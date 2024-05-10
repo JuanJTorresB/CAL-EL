@@ -1,5 +1,5 @@
 from Modulos.Menus import Menu_Inicial, MenuAdmin, MenuUser
-from Modulos.Datos import*
+from Modulos.DatosYValidaciones import*
 
 JSON_UBICACION = "Datos/UsuariosServiciosProductos.json"
 
