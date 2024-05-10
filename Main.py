@@ -1,9 +1,13 @@
-from Modulos.Menus import*
+from Modulos.Menus import Menu_Inicial, MenuAdmin, MenuUser
 
 print("*"*50)
 print("")
 print("BIENVENIDO".center(50))
 print("")
 
-
-Menu_Inicial()
+Rol = Menu_Inicial()
+print(Rol)
+if Rol == "Admin":
+    MenuAdmin()
+elif Rol == "User":
+    MenuUser()

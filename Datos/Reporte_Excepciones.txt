@@ -16,3 +16,7 @@ Mensaje de Excepcion "Value Error", en la linea "7", en el archivo "GestionUsuar
 Mensaje de Excepcion "Value Error", en la linea "7", en el archivo "GestionUsuarios" en la fecha 2024-05-10 02:35:47.495797
 Mensaje de Excepcion "Value Error", en la linea "7", en el archivo "GestionUsuarios" en la fecha 2024-05-10 04:07:17.673592
 Mensaje de Excepcion "Value Error", en la linea "7", en el archivo "GestionUsuarios" en la fecha 2024-05-10 04:07:54.794646
+Mensaje de Excepcion "Value Error", en la linea "7", en el archivo "GestionUsuarios" en la fecha 2024-05-10 04:33:50.455758
+Mensaje de Excepcion "Value Error", en la linea "23", en el archivo "Menus.py" en la fecha 2024-05-10 04:39:00.270709
+Mensaje de Excepcion "Value Error", en la linea "23", en el archivo "Menus.py" en la fecha 2024-05-10 04:43:43.677595
+Mensaje de Excepcion "Value Error", en la linea "23", en el archivo "Menus.py" en la fecha 2024-05-10 04:53:11.320140
