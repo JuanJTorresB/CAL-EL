@@ -1,4 +1,5 @@
 from Modulos.GestionUsuarios import PedirDocumento
+import Modulos.Menus
 import json
 
 JSON_UBICACION = "Datos/UsuariosServiciosProductos.json"
@@ -10,8 +11,8 @@ def SignIn():
     Usuarios = file_antes_mod["Usuarios"]
     for user in Usuarios:
         if user["Documento"] == Documento_Ingresado and user["Rol"] == "Admin":
-            print("Admin")
-            break
+            return "Admin"
         elif user["Documento"] == Documento_Ingresado and user["Rol"] == "User":
-            print("User")
-            break
+            return "User"
+    print("")
+    print("Documento No Encontrado".center(50, "="))

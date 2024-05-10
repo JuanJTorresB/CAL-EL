@@ -17,7 +17,13 @@ def Menu_Inicial():
     print("")
     choise = Eleccion_Numerica()           # Pide el input int
     if choise == 1:
-        Modulos.InicioSesion.SignIn()
+        Rol = Modulos.InicioSesion.SignIn()
+        if  Rol == "Admin":
+            print("Menu Admin")
+        elif Rol == "User":
+            print("Menu User")
+        else:
+            Menu_Inicial()
     elif choise == 2:
         print(2)
     elif choise == 3:
