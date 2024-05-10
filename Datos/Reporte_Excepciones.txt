@@ -14,3 +14,5 @@ Mensaje de Excepcion "Value Error", en la linea "7", en el archivo "GestionUsuar
 Mensaje de Excepcion "Value Error", en la linea "7", en el archivo "GestionUsuarios" en la fecha 2024-05-10 02:35:46.224184
 Mensaje de Excepcion "Value Error", en la linea "7", en el archivo "GestionUsuarios" en la fecha 2024-05-10 02:35:46.544608
 Mensaje de Excepcion "Value Error", en la linea "7", en el archivo "GestionUsuarios" en la fecha 2024-05-10 02:35:47.495797
+Mensaje de Excepcion "Value Error", en la linea "7", en el archivo "GestionUsuarios" en la fecha 2024-05-10 04:07:17.673592
+Mensaje de Excepcion "Value Error", en la linea "7", en el archivo "GestionUsuarios" en la fecha 2024-05-10 04:07:54.794646

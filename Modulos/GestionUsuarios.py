@@ -5,7 +5,6 @@ def PedirDocumento():
         Documento_Ingresado = int(input("Ingrese un Documento\n> "))
     except ValueError:
         Modulos.ManejoExcepiciones.LogExcepciones("Value Error", "7", "GestionUsuarios")
-        PedirDocumento()
     else:
         Documento_Ingresado = str(Documento_Ingresado)
         if len(Documento_Ingresado) == 10:
