@@ -5,7 +5,7 @@
             "Nombre_User" : "Daniela Andrea Lizarazo Lamus",
             "Documento" : "1097494374",
             "Rol" : "Admin",
-            "Edad" : "2006/02/6",
+            "Fecha_Nacimiento" : "2006/02/6",
             "Genero" : "F",
             "Ciudad" : "Bucaramanga",
             "Informacion_de_Contacto" : 
@@ -17,25 +17,29 @@
             "Historial" :
             {
                 "Categoria" : "Cliente Leal",
-                "Productos_Adquiridos" : ["Samsung J7"],
-                "Servicios_Adquiridos" : ["Claro Video"],
-                "Reclamaciones" : "",
-                "Sugerencias" : "",
-                "Test_de_Preferencias_Realizado" : false
-            },
-            "Test_de_Preferencias" :
-            {
-                
+                "Reclamaciones" : [""],
+                "Sugerencias" : [""]
             }
-
         }
     ],
     "Productos" :
     [
-
+        {
+            "Nombre_Producto" : "Redminote 11",
+            "Descripción" : "Celular",
+            "Marca" : "Xiaomi",
+            "Precio" : 600000,
+            "Stock" : true,
+            "Adquirido_por" : [""]
+        }
     ],
     "Servicios" :
     [
-
+        {
+            "Nombre_Servicio" : "Conectados V4.1 Mx",
+            "Navegacion": 60,
+            "Descripción" : "Incluye: Llamadas y SMS Ilimitado Nal. Navegacion: 60 GB.Agotados los datos incluidos, tendrá acceso a funcionalidades seleccionadas de Facebook App, Twitter y Chat de WhatsApp. No Incluye: Roaming Intnal, LDI,MMS, ni descarga de contenidos con costo, Apps incluidas: Claro Music, Claro Video ",
+            "Precio" : 42900
+        }
     ]
 }
