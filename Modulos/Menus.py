@@ -1,5 +1,5 @@
 import Modulos.ManejoExcepiciones
-import Modulos.SignInSignUp
+import Modulos.InicioSesion
 
 def Menu_Inicial():
     print("")
@@ -17,7 +17,7 @@ def Menu_Inicial():
     print("")
     choise = Eleccion_Numerica()           # Pide el input int
     if choise == 1:
-        Modulos.SignInSignUp.SignIn()
+        Modulos.InicioSesion.SignIn()
     elif choise == 2:
         print(2)
     elif choise == 3:

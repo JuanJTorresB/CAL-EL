@@ -20,6 +20,26 @@
                 "Reclamaciones" : [""],
                 "Sugerencias" : [""]
             }
+        },
+        {
+            "Nombre_User" : "Juan Jose Torres Becerra",
+            "Documento" : "1093334444",
+            "Rol" : "User",
+            "Fecha_Nacimiento" : "2006/02/6",
+            "Genero" : "F",
+            "Ciudad" : "Bucaramanga",
+            "Informacion_de_Contacto" : 
+            {
+                "Direccion_User" : "Calle 204A #40-194",
+                "Telefono_Celular" : "3204828077",
+                "Correo Electronico" : "Dani@gmail.com"
+            },
+            "Historial" :
+            {
+                "Categoria" : "Cliente Leal",
+                "Reclamaciones" : [""],
+                "Sugerencias" : [""]
+            }
         }
     ],
     "Productos" :
