@@ -6,7 +6,6 @@ print("BIENVENIDO".center(50))
 print("")
 
 Rol = Menu_Inicial()
-print(Rol)
 if Rol == "Admin":
     MenuAdmin()
 elif Rol == "User":

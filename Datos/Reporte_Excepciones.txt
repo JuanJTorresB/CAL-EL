@@ -20,3 +20,15 @@ Mensaje de Excepcion "Value Error", en la linea "7", en el archivo "GestionUsuar
 Mensaje de Excepcion "Value Error", en la linea "23", en el archivo "Menus.py" en la fecha 2024-05-10 04:39:00.270709
 Mensaje de Excepcion "Value Error", en la linea "23", en el archivo "Menus.py" en la fecha 2024-05-10 04:43:43.677595
 Mensaje de Excepcion "Value Error", en la linea "23", en el archivo "Menus.py" en la fecha 2024-05-10 04:53:11.320140
+Mensaje de Excepcion "Value Error", en la linea "23", en el archivo "Menus.py" en la fecha 2024-05-10 05:28:10.361676
+Mensaje de Excepcion "Value Error", en la linea "23", en el archivo "Menus.py" en la fecha 2024-05-10 05:28:13.891225
+Mensaje de Excepcion "Value Error", en la linea "23", en el archivo "Menus.py" en la fecha 2024-05-10 05:28:15.288050
+Mensaje de Excepcion "Value Error", en la linea "23", en el archivo "Menus.py" en la fecha 2024-05-10 05:28:16.192136
+Mensaje de Excepcion "Value Error", en la linea "23", en el archivo "Menus.py" en la fecha 2024-05-10 05:29:21.632813
+Mensaje de Excepcion "Value Error", en la linea "23", en el archivo "Menus.py" en la fecha 2024-05-10 05:34:36.426178
+Mensaje de Excepcion "Value Error", en la linea "23", en el archivo "Menus.py" en la fecha 2024-05-10 05:46:57.982450
+Mensaje de Excepcion "Value Error", en la linea "23", en el archivo "Menus.py" en la fecha 2024-05-10 05:47:56.036479
+Mensaje de Excepcion "Value Error", en la linea "23", en el archivo "Menus.py" en la fecha 2024-05-10 05:49:58.581363
+Mensaje de Excepcion "Value Error", en la linea "23", en el archivo "Menus.py" en la fecha 2024-05-10 05:50:00.483784
+Mensaje de Excepcion "Value Error", en la linea "23", en el archivo "Menus.py" en la fecha 2024-05-10 05:50:23.741501
+Mensaje de Excepcion "Value Error", en la linea "23", en el archivo "Menus.py" en la fecha 2024-05-10 05:50:48.254824
