@@ -25,11 +25,12 @@
     "Productos" :
     [
         {
-            "Nombre_Producto" : "Redminote 11",
-            "Descripción" : "Celular",
+            "Nombre_Producto" : "Xiaomi Redmi Note 13 256gb 4g",
+            "Tipo" : "Celular",
+            "Descripción" : "Xiaomi Redmi Note 13 ofrece un equilibrio entre rendimiento, pantalla de alta calidad y una cámara potente. Es una excelente opción para aquellos que buscan un dispositivo versátil y atractivo en la gama media",
+            "Color" : "Negro Noche",
             "Marca" : "Xiaomi",
-            "Precio" : 600000,
-            "Stock" : true,
+            "Precio" : 799900,
             "Adquirido_por" : [""]
         }
     ],
@@ -39,7 +40,8 @@
             "Nombre_Servicio" : "Conectados V4.1 Mx",
             "Navegacion": 60,
             "Descripción" : "Incluye: Llamadas y SMS Ilimitado Nal. Navegacion: 60 GB.Agotados los datos incluidos, tendrá acceso a funcionalidades seleccionadas de Facebook App, Twitter y Chat de WhatsApp. No Incluye: Roaming Intnal, LDI,MMS, ni descarga de contenidos con costo, Apps incluidas: Claro Music, Claro Video ",
-            "Precio" : 42900
+            "Precio" : 42900,
+            "Adquirido_por" : [""]
         }
     ]
 }
