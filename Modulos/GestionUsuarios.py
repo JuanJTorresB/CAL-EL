@@ -15,11 +15,11 @@ def CrearPerfilesUsuarios(Datos):
         Usuario["Documento"] = Documento_Validado
         Usuario["Rol"] = Modulos.DatosYValidaciones.Validacion_Rol()
         Usuario["Fecha_Nacimiento"] = Modulos.DatosYValidaciones.ValidacionFechaNacimiento()
-        Usuario["Genero"] = "F"
-        Usuario["Ciudad"] = "Bucaramanga"
-        Informacion_de_Contacto["Direccion_User"] = "Calle 204A #40-194"
+        Usuario["Genero"] = Modulos.DatosYValidaciones.ValidacionGenero()
+        Usuario["Ciudad"] = Modulos.DatosYValidaciones.ValidacionNoVacioLetras(input("Ciudad de Residencia\n> "))
+        Informacion_de_Contacto["Direccion_User"] = Modulos.DatosYValidaciones.ValidacionNoVacioAceptaEspacios(input("Direccion de Residencia\n> "))
         Informacion_de_Contacto["Telefono_Celular"] = "3204828077"
-        Informacion_de_Contacto["Correo_Electronico"] = "Dani@gmail.com"
+        Informacion_de_Contacto["Correo_Electronico"] = Modulos.DatosYValidaciones.ValidacionNoVacioAceptaEspacios(input("Correo Electronico\n> "))
         Historial["Categoria"] = "Cliente Leal"
         Historial["Reclamaciones"] = []
         Historial["Sugerencias"] = []

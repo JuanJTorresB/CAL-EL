@@ -4,7 +4,7 @@
             "Nombre_User": "Daniela Andrea Lizarazo Lamus",
             "Documento": "1097494374",
             "Rol": "Admin",
-            "Fecha_Nacimiento": "2006/02/6",
+            "Fecha_Nacimiento": "2006/02/06",
             "Genero": "F",
             "Ciudad": "Bucaramanga",
             "Informacion_de_Contacto": {
@@ -41,6 +41,42 @@
             "Documento": "1097485632",
             "Rol": "Admin",
             "Fecha_Nacimiento": "2006/10/12",
+            "Genero": "F",
+            "Ciudad": "Bucaramanga",
+            "Informacion_de_Contacto": {
+                "Direccion_User": "Calle 204A #40-194",
+                "Telefono_Celular": "3204828077",
+                "Correo_Electronico": "Dani@gmail.com"
+            },
+            "Historial": {
+                "Categoria": "Cliente Leal",
+                "Reclamaciones": [],
+                "Sugerencias": []
+            }
+        },
+        {
+            "Nombre_User": "Lida Yaneth",
+            "Documento": "1098563245",
+            "Rol": "User",
+            "Fecha_Nacimiento": "2000/05/02",
+            "Genero": "F",
+            "Ciudad": "Bucaramanga",
+            "Informacion_de_Contacto": {
+                "Direccion_User": "Calle 204A #40-194",
+                "Telefono_Celular": "3204828077",
+                "Correo_Electronico": "Dani@gmail.com"
+            },
+            "Historial": {
+                "Categoria": "Cliente Leal",
+                "Reclamaciones": [],
+                "Sugerencias": []
+            }
+        },
+        {
+            "Nombre_User": "Harley Queen",
+            "Documento": "1097494351",
+            "Rol": "Admin",
+            "Fecha_Nacimiento": "2020/09/05",
             "Genero": "F",
             "Ciudad": "Bucaramanga",
             "Informacion_de_Contacto": {

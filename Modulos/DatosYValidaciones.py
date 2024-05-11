@@ -7,8 +7,6 @@ def Cargar_datos(archivo):
         datos=json.load(file)
     return datos
         
-        
-
 def Guardar_datos(datos, archivo):
     datos = dict(datos)
     
@@ -54,14 +52,14 @@ def PedirDocumento():
 def ValidacionAnio():
     while True:
         try:
-            ValidacionAño = int(input("Año en el formato AAAA\n> "))
+            ValidacionAnio = int(input("Año en el formato AAAA\n> "))
         except ValueError:
             Modulos.ManejoExcepiciones.LogExcepciones("Value Error", "59", "DatosYValidaciones")
             print("Año Invalido".center(50, "="))
         else:
-            ValidacionAño_Str = str(ValidacionAño)
-            if len(ValidacionAño_Str) == 4:
-                return ValidacionAño
+            ValidacionAnio_Str = str(ValidacionAnio)
+            if len(ValidacionAnio_Str) == 4 and ValidacionAnio< 2024:
+                return ValidacionAnio
 
 def ValidacionMes():
     while True:
@@ -72,22 +70,20 @@ def ValidacionMes():
             print("Més Invalido".center(50, "="))
         else:
             ValidacionMes_Str = str(ValidacionMes)
-            if len(ValidacionMes_Str) == 2:
+            if len(ValidacionMes_Str) <= 2 and ValidacionMes <= 12 and ValidacionMes > 0:
                 return ValidacionMes
             
 def ValidacionDia():
     while True:
         try:
-            ValidacionDia = int(input("Més en el formato DD\n> "))
+            ValidacionDia = int(input("Dia en el formato DD\n> "))
         except ValueError:
             Modulos.ManejoExcepiciones.LogExcepciones("Value Error", "71", "DatosYValidaciones")
             print("Dia Invalido".center(50, "="))
         else:
             ValidacionDia_Str = str(ValidacionDia)
-            if len(ValidacionDia_Str) == 2:
+            if len(ValidacionDia_Str) <= 2 and ValidacionDia <= 31 and ValidacionDia > 0:
                 return ValidacionDia
-            
-    
                 
 def ValidacionFechaNacimiento():
     print("Escribe la Fecha de Nacimiento en el formato AAAA/MM/DD")
@@ -96,3 +92,50 @@ def ValidacionFechaNacimiento():
     Dia = ValidacionDia()
     return(f"{Anio}/{Mes}/{Dia}")
     
+def ValidacionGenero():
+    while True:
+        try:
+            Rol_Ingresado = int(input('Ingrese el Genero para el Perfil (1) "F" (2) "M" (3) "Otro"\n> '))
+        except ValueError:
+            Modulos.ManejoExcepiciones.LogExcepciones("Value Error", "25", "DatosYValidaciones")
+        else:
+            if Rol_Ingresado == 1:
+                return("F")
+            elif Rol_Ingresado == 2:
+                return("M")
+            elif Rol_Ingresado == 3:
+                return("Otro")
+            else:
+                print("Opcion No valida".center(50, "="))
+
+def ValidacionNoVacioLetras(Input_Generico):
+    print("SIN ESPACIOS")
+    while True:
+        if bool(Input_Generico):
+            return Input_Generico
+        elif not Input_Generico.isalpha():
+            print("Valor Invalido".center(50, "="))
+            Input_Generico = input("> ")
+        else:
+            print("Valor Invalido".center(50, "="))
+            Input_Generico = input("> ")
+            
+def ValidacionNoVacioNumeros(Input_Generico):
+    print("SIN ESPACIOS")
+    while True:
+        if bool(Input_Generico):
+            return Input_Generico
+        elif not Input_Generico.isalnum():
+            print("Valor Invalido".center(50, "="))
+            Input_Generico = input("> ")
+        else:
+            print("Valor Invalido".center(50, "="))
+            Input_Generico = input("> ")
+            
+def ValidacionNoVacioAceptaEspacios(Input_Generico):
+    while True:
+        if bool(Input_Generico):
+            return Input_Generico
+        else:
+            print("Valor Invalido".center(50, "="))
+            Input_Generico = input("> ")
