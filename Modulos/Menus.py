@@ -109,11 +109,11 @@ def MenuGestionarUsuarios(Datos):
         if choise == 1:
             Datos = Modulos.GestionUsuarios.CrearPerfilesUsuarios(Datos)
         elif choise == 2:
-            print(2)
+            Modulos.GestionUsuarios.ListarPerfilesUsuarios(Datos)
         elif choise == 3:
             print(3)
         elif choise == 4:
-            print(4)
+            Datos = Modulos.GestionUsuarios.EliminarPerfilesUsuarios(Datos)
         elif choise == 5:
             print(5)
             break

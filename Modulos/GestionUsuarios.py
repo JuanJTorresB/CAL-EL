@@ -29,8 +29,24 @@ def CrearPerfilesUsuarios(Datos):
         return Datos
     
 def ListarPerfilesUsuarios(Datos):
-    Datos["Usuarios"]
-    
+    Usuarios = Datos["Usuarios"]
+    for Usuario in Usuarios:
+        print(Usuario)
+        print("")
+        
+def ActualizarPerfilesUsuarios(Datos):
+    a = 5
+    return Datos
+
+def EliminarPerfilesUsuarios(Datos):
+    Documento_Usuario = Modulos.DatosYValidaciones.PedirDocumento()
+    Usuarios = Datos["Usuarios"]
+    for user in Usuarios:
+        if user["Documento"] == Documento_Usuario:
+            Datos["Usuarios"] = Usuarios.pop(user)
+            return Datos
+    print("Documento No ENcontrado".center("=", 50))
+
     """     "Nombre_User" : "Daniela Andrea Lizarazo Lamus",
             "Documento" : "1097494374",
             "Rol" : "Admin",
