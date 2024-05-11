@@ -50,7 +50,6 @@ def ActualizarPerfilesUsuarios(Datos):
             print("(9) Correo_Electronico".center(50))
             print("(10) Categoria".center(50))
             print("(0) Volver".center(50))
-            print(user)
             choise = Modulos.Menus.Eleccion_Numerica()
             if choise == 1:
                 user["Nombre_User"] = str(input("Nombre del User\n> "))
@@ -75,16 +74,16 @@ def ActualizarPerfilesUsuarios(Datos):
                 user["Ciudad"] = Modulos.DatosYValidaciones.ValidacionNoVacioLetras("Ingrese su Ciudad de Residencia\n")
                 return Datos
             elif choise == 7:
-                user["Direccion_User"] = Modulos.DatosYValidaciones.ValidacionNoVacioAceptaEspacios(input("Direccion de Residencia\n> "))
+                user["Informacion_de_Contacto"]["Direccion_User"] = Modulos.DatosYValidaciones.ValidacionNoVacioAceptaEspacios(input("Direccion de Residencia\n> "))
                 return Datos
             elif choise == 8:
-                user["Telefono_Celular"] = Modulos.DatosYValidaciones.ValidacionNumeroCelular()
+                user["Informacion_de_Contacto"]["Telefono_Celular"] = Modulos.DatosYValidaciones.ValidacionNumeroCelular()
                 return Datos
             elif choise == 9:
-                user["Correo_Electronico"] = Modulos.DatosYValidaciones.ValidacionNoVacioAceptaEspacios(input("Correo Electronico\n> "))
+                user["Informacion_de_Contacto"]["Correo_Electronico"] = Modulos.DatosYValidaciones.ValidacionNoVacioAceptaEspacios(input("Correo Electronico\n> "))
                 return Datos
             elif choise == 10:
-                user["Categoria"] = Modulos.DatosYValidaciones.ValidacionCategoriaCliente()
+                user["Historial"]["Categoria"] = Modulos.DatosYValidaciones.ValidacionCategoriaCliente()
                 return Datos
             elif choise == 0:
                 print("Valor Invalido")
@@ -94,7 +93,6 @@ def ActualizarPerfilesUsuarios(Datos):
                 return Datos
     print("Documento No Encontrado")
     
-
 def EliminarPerfilesUsuarios(Datos):
     Documento_Usuario = Modulos.DatosYValidaciones.PedirDocumento()
     Usuarios = Datos["Usuarios"]
