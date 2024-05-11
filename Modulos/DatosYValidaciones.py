@@ -181,17 +181,15 @@ def ValidacionPrecios(Mensaje):
 def ValidacionTipoServicio():
     while True:
         try:
-            Tipo_Ingresado = int(input('Ingrese el tipo de Servicio (1) "Prepago" (2) "Postpago" (3) "Fibra Optica" (4) ""\n> '))
+            Tipo_Ingresado = int(input('Ingrese el tipo de Servicio (1) "Prepago" (2) "Postpago" (3) "Fibra Optica"\n> '))
         except ValueError:
-            Modulos.ManejoExcepiciones.LogExcepciones("Value Error", "25", "DatosYValidaciones")
+            Modulos.ManejoExcepiciones.LogExcepciones("Value Error", "186", "DatosYValidaciones")
         else:
             if Tipo_Ingresado == 1:
-                return("Admin")
+                return("Prepago")
             elif Tipo_Ingresado == 2:
-                return("User")
-            elif Tipo_Ingresado == 2:
-                return("User")
-            elif Tipo_Ingresado == 2:
-                return("User")
+                return("Postpago")
+            elif Tipo_Ingresado == 3:
+                return("Fibra Optica")
             else:
                 print("Opcion No valida".center(50, "="))

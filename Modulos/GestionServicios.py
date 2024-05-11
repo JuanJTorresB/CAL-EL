@@ -4,12 +4,12 @@ import Modulos.Menus
 
 def CrearServicios(Datos):
     while True:
-        Producto = {}
-        Producto["Nombre_Servicio"] = str(input("Nombre del Servicio\n> "))
-        Producto["Tipo"] = "Prepago"
-        Producto["Descripcion"] = str(input("Ingrese una descripcion de el Servicio"))
-        Producto["Precio"] = Modulos.DatosYValidaciones.ValidacionPrecios("Precio")
-        Datos["Productos"].append(Producto)
+        Servicios = {}
+        Servicios["Nombre_Servicio"] = str(input("Nombre del Servicio\n> "))
+        Servicios["Tipo"] = Modulos.DatosYValidaciones.ValidacionTipoServicio()
+        Servicios["Descripcion"] = str(input("Ingrese una descripcion de el Servicio"))
+        Servicios["Precio"] = Modulos.DatosYValidaciones.ValidacionPrecios("Precio")
+        Datos["Servicios"].append(Servicios)
         return Datos
     
 def ListarPerfilesUsuarios(Datos):
