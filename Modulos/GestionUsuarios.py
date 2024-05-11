@@ -16,17 +16,20 @@ def CrearPerfilesUsuarios(Datos):
         Usuario["Rol"] = Modulos.DatosYValidaciones.Validacion_Rol()
         Usuario["Fecha_Nacimiento"] = Modulos.DatosYValidaciones.ValidacionFechaNacimiento()
         Usuario["Genero"] = Modulos.DatosYValidaciones.ValidacionGenero()
-        Usuario["Ciudad"] = Modulos.DatosYValidaciones.ValidacionNoVacioLetras(input("Ciudad de Residencia\n> "))
+        Usuario["Ciudad"] = Modulos.DatosYValidaciones.ValidacionNoVacioLetras("Ingrese su Ciudad de Residencia\n")
         Informacion_de_Contacto["Direccion_User"] = Modulos.DatosYValidaciones.ValidacionNoVacioAceptaEspacios(input("Direccion de Residencia\n> "))
-        Informacion_de_Contacto["Telefono_Celular"] = "3204828077"
+        Informacion_de_Contacto["Telefono_Celular"] = Modulos.DatosYValidaciones.ValidacionNumeroCelular()
         Informacion_de_Contacto["Correo_Electronico"] = Modulos.DatosYValidaciones.ValidacionNoVacioAceptaEspacios(input("Correo Electronico\n> "))
-        Historial["Categoria"] = "Cliente Leal"
+        Historial["Categoria"] = Modulos.DatosYValidaciones.ValidacionCategoriaCliente()
         Historial["Reclamaciones"] = []
         Historial["Sugerencias"] = []
         Usuario["Informacion_de_Contacto"] = Informacion_de_Contacto
         Usuario["Historial"] = Historial
         Datos["Usuarios"].append(Usuario)
         return Datos
+    
+def ListarPerfilesUsuarios(Datos):
+    Datos["Usuarios"]
     
     """     "Nombre_User" : "Daniela Andrea Lizarazo Lamus",
             "Documento" : "1097494374",

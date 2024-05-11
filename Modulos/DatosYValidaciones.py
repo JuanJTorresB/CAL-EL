@@ -97,7 +97,7 @@ def ValidacionGenero():
         try:
             Rol_Ingresado = int(input('Ingrese el Genero para el Perfil (1) "F" (2) "M" (3) "Otro"\n> '))
         except ValueError:
-            Modulos.ManejoExcepiciones.LogExcepciones("Value Error", "25", "DatosYValidaciones")
+            Modulos.ManejoExcepiciones.LogExcepciones("Value Error", "100", "DatosYValidaciones")
         else:
             if Rol_Ingresado == 1:
                 return("F")
@@ -108,17 +108,17 @@ def ValidacionGenero():
             else:
                 print("Opcion No valida".center(50, "="))
 
-def ValidacionNoVacioLetras(Input_Generico):
-    print("SIN ESPACIOS")
+def ValidacionNoVacioLetras(Mensaje_Input):
+    print(Mensaje_Input)
     while True:
+        Input_Generico = input("> ")
         if bool(Input_Generico):
-            return Input_Generico
-        elif not Input_Generico.isalpha():
-            print("Valor Invalido".center(50, "="))
-            Input_Generico = input("> ")
+            if not Input_Generico.isalpha():
+                print("Valor Invalido".center(50, "="))
+            else:
+                return Input_Generico
         else:
             print("Valor Invalido".center(50, "="))
-            Input_Generico = input("> ")
             
 def ValidacionNoVacioNumeros(Input_Generico):
     print("SIN ESPACIOS")
@@ -139,3 +139,33 @@ def ValidacionNoVacioAceptaEspacios(Input_Generico):
         else:
             print("Valor Invalido".center(50, "="))
             Input_Generico = input("> ")
+            
+def ValidacionNumeroCelular():
+    while True:
+        try:
+            Num_Ingresado = int(input("Numero de Celular\n> "))
+        except ValueError:
+            Modulos.ManejoExcepiciones.LogExcepciones("Value Error", "148", "DatosYValidaciones")
+        else:
+            Num_Ingresado = str(Num_Ingresado)
+            if len(Num_Ingresado) == 10:
+                return Num_Ingresado
+            else:
+                print("Longitud Invalida".center(50, "="))
+            
+def ValidacionCategoriaCliente():
+    while True:
+        try:
+            Rol_Ingresado = int(input('Ingrese la categoria del Cliente (1) "Nuevo Cliente" (2) "Clientes Regulares" (3) "Clientes Leales"\n> '))
+        except ValueError:
+            Modulos.ManejoExcepiciones.LogExcepciones("Value Error", "160", "DatosYValidaciones")
+        else:
+            if Rol_Ingresado == 1:
+                return("Nuevo Cliente")
+            elif Rol_Ingresado == 2:
+                return("Clientes Regulares")
+            elif Rol_Ingresado == 3:
+                return("Clientes Leales")
+            else:
+                print("Opcion No valida".center(50, "="))
+                

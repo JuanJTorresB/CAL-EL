@@ -27,7 +27,7 @@ def Menu_Inicial(Datos):
         elif choise == 2:
             print(2)
         elif choise == 3:
-            print(3)
+            break
         elif choise == 0:
             print("")
         else:

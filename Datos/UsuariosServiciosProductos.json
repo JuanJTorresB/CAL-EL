@@ -14,8 +14,20 @@
             },
             "Historial": {
                 "Categoria": "Cliente Leal",
-                "Reclamaciones": [],
-                "Sugerencias": []
+                "Reclamaciones": 
+                [
+                    {
+                        "Fecha": "2024/05/10",
+                        "Descripcion": "El pedido llegó con retraso y la calidad no fue la esperada."
+                    }
+                ],
+                "Sugerencias":
+                [
+                    {
+                        "Fecha": "2024/05/10",
+                        "Descripcion": "El producto estaba dañado al recibirlo."
+                    }
+                ]
             }
         },
         {
@@ -86,6 +98,24 @@
             },
             "Historial": {
                 "Categoria": "Cliente Leal",
+                "Reclamaciones": [],
+                "Sugerencias": []
+            }
+        },
+        {
+            "Nombre_User": "Juan",
+            "Documento": "1023564897",
+            "Rol": "Admin",
+            "Fecha_Nacimiento": "1245/2/3",
+            "Genero": "M",
+            "Ciudad": "Floridablanca",
+            "Informacion_de_Contacto": {
+                "Direccion_User": "Avenida7",
+                "Telefono_Celular": "2115635487",
+                "Correo_Electronico": "juan@gmail.com"
+            },
+            "Historial": {
+                "Categoria": "Nuevo Cliente",
                 "Reclamaciones": [],
                 "Sugerencias": []
             }
