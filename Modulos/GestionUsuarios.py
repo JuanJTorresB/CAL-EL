@@ -43,7 +43,8 @@ def EliminarPerfilesUsuarios(Datos):
     Usuarios = Datos["Usuarios"]
     for user in Usuarios:
         if user["Documento"] == Documento_Usuario:
-            Datos["Usuarios"] = Usuarios.pop(user)
+            Usuarios.remove(user)
+            Datos["Usuarios"] = Usuarios
             return Datos
     print("Documento No ENcontrado".center("=", 50))
 

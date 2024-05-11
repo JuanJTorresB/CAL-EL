@@ -14,18 +14,16 @@
             },
             "Historial": {
                 "Categoria": "Cliente Leal",
-                "Reclamaciones": 
-                [
+                "Reclamaciones": [
                     {
                         "Fecha": "2024/05/10",
-                        "Descripcion": "El pedido llegó con retraso y la calidad no fue la esperada."
+                        "Descripcion": "El pedido lleg\u00f3 con retraso y la calidad no fue la esperada."
                     }
                 ],
-                "Sugerencias":
-                [
+                "Sugerencias": [
                     {
                         "Fecha": "2024/05/10",
-                        "Descripcion": "El producto estaba dañado al recibirlo."
+                        "Descripcion": "El producto estaba da\u00f1ado al recibirlo."
                     }
                 ]
             }
@@ -101,31 +99,13 @@
                 "Reclamaciones": [],
                 "Sugerencias": []
             }
-        },
-        {
-            "Nombre_User": "Juan",
-            "Documento": "1023564897",
-            "Rol": "Admin",
-            "Fecha_Nacimiento": "1245/2/3",
-            "Genero": "M",
-            "Ciudad": "Floridablanca",
-            "Informacion_de_Contacto": {
-                "Direccion_User": "Avenida7",
-                "Telefono_Celular": "2115635487",
-                "Correo_Electronico": "juan@gmail.com"
-            },
-            "Historial": {
-                "Categoria": "Nuevo Cliente",
-                "Reclamaciones": [],
-                "Sugerencias": []
-            }
         }
     ],
     "Productos": [
         {
             "Nombre_Producto": "Xiaomi Redmi Note 13 256gb 4g",
             "Tipo": "Celular",
-            "Descripci\u00f3n": "Xiaomi Redmi Note 13 ofrece un equilibrio entre rendimiento, pantalla de alta calidad y una c\u00e1mara potente. Es una excelente opci\u00f3n para aquellos que buscan un dispositivo vers\u00e1til y atractivo en la gama media",
+            "Descripcion": "Xiaomi Redmi Note 13 ofrece un equilibrio entre rendimiento, pantalla de alta calidad y una c\u00e1mara potente. Es una excelente opci\u00f3n para aquellos que buscan un dispositivo vers\u00e1til y atractivo en la gama media",
             "Color": "Negro Noche",
             "Marca": "Xiaomi",
             "Precio": 799900,
@@ -136,7 +116,7 @@
         {
             "Nombre_Servicio": "Conectados V4.1 Mx",
             "Navegacion": 60,
-            "Descripci\u00f3n": "Incluye: Llamadas y SMS Ilimitado Nal. Navegacion: 60 GB.Agotados los datos incluidos, tendr\u00e1 acceso a funcionalidades seleccionadas de Facebook App, Twitter y Chat de WhatsApp. No Incluye: Roaming Intnal, LDI,MMS, ni descarga de contenidos con costo, Apps incluidas: Claro Music, Claro Video ",
+            "Descripcion": "Incluye: Llamadas y SMS Ilimitado Nal. Navegacion: 60 GB.Agotados los datos incluidos, tendr\u00e1 acceso a funcionalidades seleccionadas de Facebook App, Twitter y Chat de WhatsApp. No Incluye: Roaming Intnal, LDI,MMS, ni descarga de contenidos con costo, Apps incluidas: Claro Music, Claro Video ",
             "Precio": 42900,
             "Adquirido_por": []
         }
