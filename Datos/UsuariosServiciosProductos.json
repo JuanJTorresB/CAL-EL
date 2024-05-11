@@ -121,6 +121,7 @@
         {
             "Nombre_Servicio": "Conectados V4.1 Mx",
             "Navegacion": 60,
+            "Tipo" : "Prepago",
             "Descripcion": "Incluye: Llamadas y SMS Ilimitado Nal. Navegacion: 60 GB.Agotados los datos incluidos, tendran acceso a funcionalidades seleccionadas de Facebook App, Twitter y Chat de WhatsApp. No Incluye: Roaming Intnal, LDI,MMS, ni descarga de contenidos con costo, Apps incluidas: Claro Music, Claro Video ",
             "Precio": 42900,
             "Adquirido_por": [

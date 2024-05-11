@@ -1,4 +1,4 @@
-import Modulos.ManejoExcepiciones, Modulos.InicioSesion, Modulos.GestionUsuarios
+import Modulos.ManejoExcepiciones, Modulos.InicioSesion, Modulos.GestionUsuarios, Modulos.GestionServicios
 
 UBI_DATOS = "Datos/UsuariosServiciosProductos.json"
 
@@ -71,13 +71,12 @@ def MenuAdmin(Datos):
         if choise == 1:
             MenuGestionarUsuarios(Datos)
         elif choise == 2:
-            print(2)
+            MenuGestionarServicios(Datos)
         elif choise == 3:
-            print(3)
+            MenuGestionarProductos(Datos)
         elif choise == 4:
             print(4)
         elif choise == 5:
-            print(5)
             break
         elif choise == 0:
             print("")
@@ -122,6 +121,82 @@ def MenuGestionarUsuarios(Datos):
         else:
             print("Valor Invalido")
         
+def MenuGestionarServicios(Datos):
+    while True:
+        print("")
+        print("*"*50)
+        print("")
+        print("Que Desea Hacer".center(50))
+        print("")
+        print("(1) Crear Servicios".center(50))
+        print("")
+        print("")                                                        # Imprime las opciones del menu Gestionar Usuarios
+        print("(2) Listar Servicios".center(50))
+        print("")
+        print("")
+        print("(3) Actualizar Servicios".center(50))
+        print("")
+        print("")
+        print("(4) Eliminar Servicios".center(50))
+        print("")
+        print("")
+        print("(5) VOLVER".center(50))
+        print("")
+        choise = Eleccion_Numerica()           # Pide el input int
+        if choise == 1:
+            Datos = Modulos.GestionServicios.CrearServicios(Datos)
+        elif choise == 2:
+            Modulos.GestionUsuarios.ListarPerfilesUsuarios(Datos)
+        elif choise == 3:
+            Datos = Modulos.GestionUsuarios.ActualizarPerfilesUsuarios(Datos)
+        elif choise == 4:
+            Datos = Modulos.GestionUsuarios.EliminarPerfilesUsuarios(Datos)
+        elif choise == 5:
+            print(5)
+            break
+        elif choise == 0:
+            print("")
+        else:
+            print("Valor Invalido")
+            
+def MenuGestionarProductos():
+    while True:
+        print("")
+        print("*"*50)
+        print("")
+        print("Que Desea Hacer".center(50))
+        print("")
+        print("(1) Crear Productos".center(50))
+        print("")
+        print("")                                                        # Imprime las opciones del menu Gestionar Usuarios
+        print("(2) Listar Productos".center(50))
+        print("")
+        print("")
+        print("(3) Actualizar Productos".center(50))
+        print("")
+        print("")
+        print("(4) Eliminar Productos".center(50))
+        print("")
+        print("")
+        print("(5) VOLVER".center(50))
+        print("")
+        choise = Eleccion_Numerica()           # Pide el input int
+        if choise == 1:
+            Datos = Modulos.GestionUsuarios.CrearPerfilesUsuarios(Datos)
+        elif choise == 2:
+            Modulos.GestionUsuarios.ListarPerfilesUsuarios(Datos)
+        elif choise == 3:
+            Datos = Modulos.GestionUsuarios.ActualizarPerfilesUsuarios(Datos)
+        elif choise == 4:
+            Datos = Modulos.GestionUsuarios.EliminarPerfilesUsuarios(Datos)
+        elif choise == 5:
+            print(5)
+            break
+        elif choise == 0:
+            print("")
+        else:
+            print("Valor Invalido")
+
 def MenuUser():
     print("*"*50)
     print("")
