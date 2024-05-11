@@ -39,7 +39,7 @@ def Eleccion_Numerica():
         return(choise)
     except ValueError:
         print("Valor Invalido")
-        Modulos.ManejoExcepiciones.LogExcepciones("Value Error", "23", "Menus.py")
+        Modulos.ManejoExcepiciones.LogExcepciones("Value Error", "42", "Menus.py")
     return(0)
 
 def MenuAdmin(Datos):
@@ -111,7 +111,7 @@ def MenuGestionarUsuarios(Datos):
         elif choise == 2:
             Modulos.GestionUsuarios.ListarPerfilesUsuarios(Datos)
         elif choise == 3:
-            print(3)
+            Datos = Modulos.GestionUsuarios.ActualizarPerfilesUsuarios(Datos)
         elif choise == 4:
             Datos = Modulos.GestionUsuarios.EliminarPerfilesUsuarios(Datos)
         elif choise == 5:

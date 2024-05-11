@@ -1,7 +1,7 @@
 {
     "Usuarios": [
         {
-            "Nombre_User": "Daniela Andrea Lizarazo Lamus",
+            "Nombre_User": "Dani Mi Amor",
             "Documento": "1097494374",
             "Rol": "Admin",
             "Fecha_Nacimiento": "2006/02/06",
@@ -17,7 +17,7 @@
                 "Reclamaciones": [
                     {
                         "Fecha": "2024/05/10",
-                        "Descripcion": "El pedido lleg\u00f3 con retraso y la calidad no fue la esperada."
+                        "Descripcion": "El pedido llegado con retraso y la calidad no fue la esperada."
                     }
                 ],
                 "Sugerencias": [
@@ -105,20 +105,30 @@
         {
             "Nombre_Producto": "Xiaomi Redmi Note 13 256gb 4g",
             "Tipo": "Celular",
-            "Descripcion": "Xiaomi Redmi Note 13 ofrece un equilibrio entre rendimiento, pantalla de alta calidad y una c\u00e1mara potente. Es una excelente opci\u00f3n para aquellos que buscan un dispositivo vers\u00e1til y atractivo en la gama media",
+            "Descripcion": "Xiaomi Redmi Note 13 ofrece un equilibrio entre rendimiento, pantalla de alta calidad y una camara potente. Es una excelente opcion para aquellos que buscan un dispositivo vers\u00e1til y atractivo en la gama media",
             "Color": "Negro Noche",
             "Marca": "Xiaomi",
             "Precio": 799900,
-            "Adquirido_por": []
+            "Adquirido_por": [
+                {
+                    "Documento": 1097494351,
+                    "Cantidad": 1
+                }
+            ]
         }
     ],
     "Servicios": [
         {
             "Nombre_Servicio": "Conectados V4.1 Mx",
             "Navegacion": 60,
-            "Descripcion": "Incluye: Llamadas y SMS Ilimitado Nal. Navegacion: 60 GB.Agotados los datos incluidos, tendr\u00e1 acceso a funcionalidades seleccionadas de Facebook App, Twitter y Chat de WhatsApp. No Incluye: Roaming Intnal, LDI,MMS, ni descarga de contenidos con costo, Apps incluidas: Claro Music, Claro Video ",
+            "Descripcion": "Incluye: Llamadas y SMS Ilimitado Nal. Navegacion: 60 GB.Agotados los datos incluidos, tendran acceso a funcionalidades seleccionadas de Facebook App, Twitter y Chat de WhatsApp. No Incluye: Roaming Intnal, LDI,MMS, ni descarga de contenidos con costo, Apps incluidas: Claro Music, Claro Video ",
             "Precio": 42900,
-            "Adquirido_por": []
+            "Adquirido_por": [
+                {
+                    "Documento": 1097494351,
+                    "Cantidad": 1
+                }
+            ]
         }
     ]
 }
