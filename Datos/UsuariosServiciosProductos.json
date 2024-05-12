@@ -112,7 +112,7 @@
             "Adquirido_por": [
                 {
                     "Documento": 1097494351,
-                    "Fecha_Aquisicion": "2024-05-10",
+                    "Fecha_Adquisicion": "2024-05-10",
                     "Estado": "Enviado",
                     "Cantidad": 1
                 }
@@ -156,7 +156,7 @@
             "Adquirido_por": [
                 {
                     "Documento": 1097494351,
-                    "Fecha_Aquisicion": "2024-05-10",
+                    "Fecha_Adquisicion": "2024-05-10",
                     "Estado": "Activo",
                     "Cantidad": 1
                 }
@@ -171,7 +171,7 @@
             "Adquirido_por": [
                 {
                     "Documento": 1097494351,
-                    "Fecha_Aquisicion": "2024-05-10",
+                    "Fecha_Adquisicion": "2024-05-10",
                     "Estado": "Activo",
                     "Cantidad": 1
                 }

@@ -83,7 +83,7 @@ def MenuAdmin(Datos):
         elif choise == 4:
             print(4)
         elif choise == 5:
-            print(5)
+            MenuGestionarVentas(Datos)
         elif choise == 6:
             break
         elif choise == 0:
@@ -160,7 +160,6 @@ def MenuGestionarServicios(Datos):
         elif choise == 4:
             Datos = Modulos.GestionServicios.EliminarServicios(Datos)
         elif choise == 5:
-            print(5)
             break
         elif choise == 0:
             print("")
@@ -203,24 +202,56 @@ def MenuGestionarProductos(Datos):
             print("")
         else:
             print("Valor Invalido")
-
-def MenuUser(Datos):
-    print("Menu User")
-"""    print("*"*50)
-    print("")
-    print("BIENVENIDO USER".center(50))
-    print("")
+            
+def MenuGestionarVentas(Datos):
     while True:
         print("")
         print("*"*50)
         print("")
         print("Que Desea Hacer".center(50))
         print("")
-        print("(1) SIGN IN".rjust(30))
+        print("(1) Registrar Venta Productos".center(50))
         print("")
-        print("")                               # Imprime las opciones del menu User
-        print("(2) SIGN UP".rjust(30))
+        print("")                               # Imprime las opciones del menu Admin
+        print("(2) Registrar Venta Servicios".center(50))
         print("")
         print("")
-        print("(3) SALIR".rjust(28))
-        print("")"""
+        print("(3) Buscar por Caregoria".center(50))
+        print("")
+        print("")
+        print("(4) Volver".center(50))
+        print("")
+        choise = Eleccion_Numerica()           # Pide el input int
+        if choise == 1:
+            "a"
+        elif choise == 2:
+            "a"
+        elif choise == 3:
+            "a"
+        elif choise == 4:
+            break
+        elif choise == 0:
+            print("")
+        else:
+            print("Valor Invalido")
+            
+def MenuUser(Datos):
+    print("Menu User")
+    """    print("*"*50)
+        print("")
+        print("BIENVENIDO USER".center(50))
+        print("")
+        while True:
+            print("")
+            print("*"*50)
+            print("")
+            print("Que Desea Hacer".center(50))
+            print("")
+            print("(1) SIGN IN".rjust(30))
+            print("")
+            print("")                               # Imprime las opciones del menu User
+            print("(2) SIGN UP".rjust(30))
+            print("")
+            print("")
+            print("(3) SALIR".rjust(28))
+            print("")"""
