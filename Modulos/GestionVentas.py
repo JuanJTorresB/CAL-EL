@@ -19,3 +19,6 @@ def RegistrarVentaProductos(Datos):
             Factura["Estado"] = ValidacionTipodeVentadeProductos()
             Factura["Cantidad"] = Eleccion_Numerica() 
             Facturas.append(Factura)
+            Producto["Adquirido_por"] = Facturas
+            Datos["Productos"] = Productos
+            return Datos
