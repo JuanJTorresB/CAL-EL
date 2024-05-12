@@ -193,3 +193,13 @@ def ValidacionTipoServicio():
                 return("Fibra Optica")
             else:
                 print("Opcion No valida".center(50, "="))
+
+def PedirCodigoIdentificador():
+    while True:
+            print("Introduce Un Codigo Identificador: ")
+            Identidicador = Modulos.Menus.Eleccion_Numerica()
+            if Identidicador != 0 and Identidicador > 0:
+                break
+            else:
+                print("Debe ser un Numero, Diferente a 0 y Positivo")
+    return Identidicador
