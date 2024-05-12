@@ -42,6 +42,6 @@ Rol = Menu_Inicial(Datos)
 if Rol == "Admin":
     MenuAdmin(Datos)
 elif Rol == "User":
-    MenuUser()
+    MenuUser(Datos)
     
 Guardar_datos(Datos, JSON_UBICACION)

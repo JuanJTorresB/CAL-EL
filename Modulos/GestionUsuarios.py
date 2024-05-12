@@ -11,7 +11,7 @@ def CrearPerfilesUsuarios(Datos):
         Documento_Validado = Modulos.DatosYValidaciones.PedirDocumento()
         if Modulos.DatosYValidaciones.DocumentoNoRepetido(Documento_Validado, Datos):
             print("Documento Repetido")
-            break
+            return Datos
         Usuario["Documento"] = Documento_Validado
         Usuario["Rol"] = Modulos.DatosYValidaciones.Validacion_Rol()
         Usuario["Fecha_Nacimiento"] = Modulos.DatosYValidaciones.ValidacionFechaNacimiento()
@@ -107,12 +107,13 @@ def ActualizarPerfilesUsuarios(Datos):
                 user["Historial"]["Categoria"] = Modulos.DatosYValidaciones.ValidacionCategoriaCliente()
                 return Datos
             elif choise == 0:
-                print("Valor Invalido")
+                print("")
                 return Datos
             else:
                 print("Valor Invalido")
                 return Datos
     print("Documento No Encontrado")
+    return Datos
     
 def EliminarPerfilesUsuarios(Datos):
     Documento_Usuario = Modulos.DatosYValidaciones.PedirDocumento()
@@ -123,3 +124,4 @@ def EliminarPerfilesUsuarios(Datos):
             Datos["Usuarios"] = Usuarios
             return Datos
     print("Documento No ENcontrado".center(50, "="))
+    return Datos

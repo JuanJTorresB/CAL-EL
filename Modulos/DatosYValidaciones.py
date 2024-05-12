@@ -194,12 +194,34 @@ def ValidacionTipoServicio():
             else:
                 print("Opcion No valida".center(50, "="))
 
-def PedirCodigoIdentificador():
-    while True:
-            print("Introduce Un Codigo Identificador: ")
-            Identidicador = Modulos.Menus.Eleccion_Numerica()
-            if Identidicador != 0 and Identidicador > 0:
-                break
+def ValidacionMarca():
+     while True:
+        try:
+            Marca_Ingresada = int(input('Ingrese la Marca (1) "Xiaomi" (2) "Kalley" (3) "Asus"\n> '))
+        except ValueError:
+            Modulos.ManejoExcepiciones.LogExcepciones("Value Error", "202", "DatosYValidaciones")
+        else:
+            if Marca_Ingresada == 1:
+                return("Xiaomi")
+            elif Marca_Ingresada == 2:
+                return("Kalley")
+            elif Marca_Ingresada == 3:
+                return("Asus")
             else:
-                print("Debe ser un Numero, Diferente a 0 y Positivo")
-    return Identidicador
+                print("Marca No valida".center(50, "="))
+
+def ValidacionTipodeProducto():
+     while True:
+        try:
+            Marca_Ingresada = int(input('Ingrese el Tipo de Producto (1) "Celular" (2) "Televisor" (3) "Portatil"\n> '))
+        except ValueError:
+            Modulos.ManejoExcepiciones.LogExcepciones("Value Error", "202", "DatosYValidaciones")
+        else:
+            if Marca_Ingresada == 1:
+                return("Celular")
+            elif Marca_Ingresada == 2:
+                return("Televisor")
+            elif Marca_Ingresada == 3:
+                return("Portatil")
+            else:
+                print("Tipo de Producto No valido".center(50, "="))

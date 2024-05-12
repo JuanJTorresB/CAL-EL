@@ -1,3 +1,4 @@
+import Modulos.GestionProductos
 import Modulos.ManejoExcepiciones, Modulos.InicioSesion, Modulos.GestionUsuarios, Modulos.GestionServicios
 
 UBI_DATOS = "Datos/UsuariosServiciosProductos.json"
@@ -36,7 +37,7 @@ def Menu_Inicial(Datos):
 def Eleccion_Numerica():
     try:
         choise = int(input("> "))
-        return(choise)
+        return choise
     except ValueError:
         print("Valor Invalido")
         Modulos.ManejoExcepiciones.LogExcepciones("Value Error", "42", "Menus.py")
@@ -153,9 +154,9 @@ def MenuGestionarServicios(Datos):
         elif choise == 2:
             Modulos.GestionServicios.ListarServicios(Datos)
         elif choise == 3:
-            Datos = Modulos.GestionUsuarios.ActualizarPerfilesUsuarios(Datos)
+            Datos = Modulos.GestionServicios.ActualizarServicios(Datos)
         elif choise == 4:
-            Datos = Modulos.GestionUsuarios.EliminarPerfilesUsuarios(Datos)
+            Datos = Modulos.GestionServicios.EliminarServicios(Datos)
         elif choise == 5:
             print(5)
             break
@@ -164,7 +165,7 @@ def MenuGestionarServicios(Datos):
         else:
             print("Valor Invalido")
             
-def MenuGestionarProductos():
+def MenuGestionarProductos(Datos):
     while True:
         print("")
         print("*"*50)
@@ -187,22 +188,21 @@ def MenuGestionarProductos():
         print("")
         choise = Eleccion_Numerica()           # Pide el input int
         if choise == 1:
-            Datos = Modulos.GestionUsuarios.CrearPerfilesUsuarios(Datos)
+            Datos = Modulos.GestionProductos.CrearProductos(Datos)
         elif choise == 2:
-            Modulos.GestionUsuarios.ListarPerfilesUsuarios(Datos)
+            Modulos.GestionProductos.ListarProductos(Datos)
         elif choise == 3:
-            Datos = Modulos.GestionUsuarios.ActualizarPerfilesUsuarios(Datos)
+            Datos = Modulos.GestionProductos.ActualizarProductos(Datos)
         elif choise == 4:
-            Datos = Modulos.GestionUsuarios.EliminarPerfilesUsuarios(Datos)
+            Datos = Modulos.GestionProductos.EliminarProducto(Datos)
         elif choise == 5:
-            print(5)
             break
         elif choise == 0:
             print("")
         else:
             print("Valor Invalido")
 
-def MenuUser():
+def MenuUser(Datos):
     print("*"*50)
     print("")
     print("BIENVENIDO USER".center(50))
