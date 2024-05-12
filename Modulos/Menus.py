@@ -1,5 +1,7 @@
 import Modulos.GestionProductos
+import Modulos.GestionVentas
 import Modulos.ManejoExcepiciones, Modulos.InicioSesion, Modulos.GestionUsuarios, Modulos.GestionServicios
+import Modulos.Menus
 
 UBI_DATOS = "Datos/UsuariosServiciosProductos.json"
 
@@ -223,7 +225,7 @@ def MenuGestionarVentas(Datos):
         print("")
         choise = Eleccion_Numerica()           # Pide el input int
         if choise == 1:
-            "a"
+            Datos = Modulos.GestionVentas.RegistrarVentaProductos(Datos)
         elif choise == 2:
             "a"
         elif choise == 3:

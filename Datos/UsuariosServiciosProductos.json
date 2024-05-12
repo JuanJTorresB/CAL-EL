@@ -143,7 +143,26 @@
             "Descripcion": "Portatil Gaming Asus TufFA506NFHN003W AMD Ryzen 5 7535HS NVIDIA GeForce RTX 20508GB DDR5512GB PCIe 40 NVMe M2 SSD156 FHDWindows 11 Home DESCRIPCION",
             "Marca": "Asus",
             "Precio": 3881900,
-            "Adquirido_por": []
+            "Adquirido_por": [
+                {
+                    "Documento": "1097494375",
+                    "Fecha_Adquisicion": "2024/12/05",
+                    "Estado": "Enviado",
+                    "Cantidad": 1
+                },
+                {
+                    "Documento": "1097494374",
+                    "Fecha_Adquisicion": "2024/12/05",
+                    "Estado": "Enviado",
+                    "Cantidad": 1
+                },
+                {
+                    "Documento": "1097494375",
+                    "Fecha_Adquisicion": "2024/12/05",
+                    "Estado": "Recibido",
+                    "Cantidad": 1
+                }
+            ]
         }
     ],
     "Servicios": [

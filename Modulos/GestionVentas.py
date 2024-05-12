@@ -1,24 +1,24 @@
 from Modulos.GestionProductos import PedirCodigoIdentificador
 from Modulos.DatosYValidaciones import PedirDocumento, DocumentoNoRepetido, ValidacionTipodeVentadeProductos
-from Modulos.Menus import Eleccion_Numerica
+import Modulos.Menus
 from datetime import date
+
 def RegistrarVentaProductos(Datos):
     print("Para Encontra El Producto")
     Identidicador = PedirCodigoIdentificador()
     Productos = Datos["Productos"]
     for Producto in Productos:
         if Producto["Codigo_Identificador"] == Identidicador:
-            Facturas = Producto["Adquirido_por"]
             Factura = {}
             Documento_Validado = PedirDocumento()
             if not DocumentoNoRepetido(Documento_Validado, Datos):
                 print("Documento de Usuario No Registrado")
                 return Datos
             Factura["Documento"] = Documento_Validado
-            Factura["Fecha_Adquisicion"] = date.today()
+            Factura["Fecha_Adquisicion"] = "2024/12/05"
             Factura["Estado"] = ValidacionTipodeVentadeProductos()
-            Factura["Cantidad"] = Eleccion_Numerica() 
-            Facturas.append(Factura)
-            Producto["Adquirido_por"] = Facturas
-            Datos["Productos"] = Productos
+            print("Cantidad")
+            Factura["Cantidad"] = Modulos.Menus.Eleccion_Numerica()
+            Producto["Adquirido_por"].append(Factura)
             return Datos
+    return Datos
