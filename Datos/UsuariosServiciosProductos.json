@@ -4,7 +4,7 @@
             "Nombre_User": "Dani Mi Amor",
             "Documento": "1097494374",
             "Rol": "Admin",
-            "Fecha_Nacimiento": "2006/02/06",
+            "Fecha_Nacimiento": "2006/1/8",
             "Genero": "F",
             "Ciudad": "Bucaramanga",
             "Informacion_de_Contacto": {
@@ -33,24 +33,6 @@
             "Documento": "1092255555",
             "Rol": "User",
             "Fecha_Nacimiento": "2006/02/06",
-            "Genero": "F",
-            "Ciudad": "Bucaramanga",
-            "Informacion_de_Contacto": {
-                "Direccion_User": "Calle 204A #40-194",
-                "Telefono_Celular": "3204828077",
-                "Correo_Electronico": "Dani@gmail.com"
-            },
-            "Historial": {
-                "Categoria": "Cliente Leal",
-                "Reclamaciones": [],
-                "Sugerencias": []
-            }
-        },
-        {
-            "Nombre_User": "Juan Alcachofa",
-            "Documento": "1097485632",
-            "Rol": "Admin",
-            "Fecha_Nacimiento": "2006/10/12",
             "Genero": "F",
             "Ciudad": "Bucaramanga",
             "Informacion_de_Contacto": {
@@ -120,7 +102,6 @@
     "Servicios": [
         {
             "Nombre_Servicio": "Conectados V4.1 Mx",
-            "Navegacion": 60,
             "Tipo": "Prepago",
             "Descripcion": "Incluye: Llamadas y SMS Ilimitado Nal. Navegacion: 60 GB.Agotados los datos incluidos, tendran acceso a funcionalidades seleccionadas de Facebook App, Twitter y Chat de WhatsApp. No Incluye: Roaming Intnal, LDI,MMS, ni descarga de contenidos con costo, Apps incluidas: Claro Music, Claro Video ",
             "Precio": 42900,
@@ -130,6 +111,27 @@
                     "Cantidad": 1
                 }
             ]
+        },
+        {
+            "Nombre_Servicio": "Conectados V 4.3 Mx",
+            "Tipo": "Postpago",
+            "Descripcion": "Cargo Fijo Mensual: $47.900. Incluye: Llamadas y SMS Ilimitado Nal. Navegacion:75GB. Agotados los datos incluidos, tendra acceso a funcionalidades seleccionadas de Facebook App, Twitter y Chat de WhatsApp. No Incluye: Roaming Intnal, LDI, MMS, ni descarga de contenidos con costo.",
+            "Precio": 47900,
+            "Adquirido_por": [
+                {
+                    "Documento": 1097494351,
+                    "Fecha_Aquisicion": "2024-05-10",
+                    "Estado": "Activo",
+                    "Cantidad": 1
+                }
+            ]
+        },
+        {
+            "Nombre_Servicio": "Conectados V 5.1 Mx",
+            "Tipo": "Postpago",
+            "Descripcion": " Cargo Fijo Mensual: $55.900. Incluye: Llamadas ilimitadas Nal y a USA, Canada, Mexico y Pto Rico. SMS Ilimitado a Todo Destino Nal. Navegacion: 90GB para uso exclusivo de la linea y 10GB para compartir con otros dispositivos al alcance del movil. Agotados los datos incluidos, tendra acceso a funcionalidades seleccionadas de Instagram, Facebook App, Twitter y Whatsapp. Vlr Min adic LDI: Otros Destinos Hispanoamerica: $1.144, Resto del Mundo: $1.331. Las llamadas LDI se deben realizar por el 00444, generan cobro llamadas realizadas por otros operadores y no aplica marcaciones satelitales ni destinos especiales. No Incluye: Roaming Intnal, LDI a Otros Destinos, MMS, ni descarga de contenidos con costo.",
+            "Precio": 55900,
+            "Adquirido_por": []
         }
     ]
 }

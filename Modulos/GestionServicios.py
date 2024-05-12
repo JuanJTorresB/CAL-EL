@@ -7,15 +7,19 @@ def CrearServicios(Datos):
         Servicios = {}
         Servicios["Nombre_Servicio"] = str(input("Nombre del Servicio\n> "))
         Servicios["Tipo"] = Modulos.DatosYValidaciones.ValidacionTipoServicio()
-        Servicios["Descripcion"] = str(input("Ingrese una descripcion de el Servicio"))
+        Servicios["Descripcion"] = str(input("Ingrese una descripcion de el Servicio\n> "))
         Servicios["Precio"] = Modulos.DatosYValidaciones.ValidacionPrecios("Precio")
+        Servicios["Adquirido_por"] = []
         Datos["Servicios"].append(Servicios)
         return Datos
     
-def ListarPerfilesUsuarios(Datos):
-    Usuarios = Datos["Usuarios"]
-    for Usuario in Usuarios:
-        print(Usuario)
+def ListarServicios(Datos):
+    Servicios = Datos["Servicios"]
+    for Servicio in Servicios:
+        print(Servicio["Nombre_Servicio"])
+        print(Servicio["Tipo"])
+        print(Servicio["Descripcion"])
+        print(Servicio["Precio"])
         print("")
         
 def ActualizarPerfilesUsuarios(Datos):
@@ -34,47 +38,48 @@ def ActualizarPerfilesUsuarios(Datos):
             print("(9) Correo_Electronico".center(50))
             print("(10) Categoria".center(50))
             print("(0) Volver".center(50))
-            choise = Modulos.Menus.Eleccion_Numerica()
-            if choise == 1:
-                user["Nombre_User"] = str(input("Nombre del User\n> "))
-                return Datos
-            elif choise == 2:
-                Documento_Validado = Modulos.DatosYValidaciones.PedirDocumento()
-                if Modulos.DatosYValidaciones.DocumentoNoRepetido(Documento_Validado, Datos):
-                    print("Documento Repetido")
+            while True:
+                choise = Modulos.Menus.Eleccion_Numerica()
+                if choise == 1:
+                    user["Nombre_User"] = str(input("Nombre del User\n> "))
+                    return Datos
+                elif choise == 2:
+                    Documento_Validado = Modulos.DatosYValidaciones.PedirDocumento()
+                    if Modulos.DatosYValidaciones.DocumentoNoRepetido(Documento_Validado, Datos):
+                        print("Documento Repetido")
+                        return Datos
+                    else:
+                        user["Documento"] = Documento_Validado
+                elif choise == 3:
+                    user["Rol"] = Modulos.DatosYValidaciones.Validacion_Rol()
+                    return Datos
+                elif choise == 4:
+                    user["Fecha_Nacimiento"] = Modulos.DatosYValidaciones.ValidacionFechaNacimiento()
+                    return Datos
+                elif choise == 5:
+                    user["Genero"] = Modulos.DatosYValidaciones.ValidacionGenero()
+                    return Datos
+                elif choise == 6:
+                    user["Ciudad"] = Modulos.DatosYValidaciones.ValidacionNoVacioLetras("Ingrese su Ciudad de Residencia\n")
+                    return Datos
+                elif choise == 7:
+                    user["Informacion_de_Contacto"]["Direccion_User"] = Modulos.DatosYValidaciones.ValidacionNoVacioAceptaEspacios(input("Direccion de Residencia\n> "))
+                    return Datos
+                elif choise == 8:
+                    user["Informacion_de_Contacto"]["Telefono_Celular"] = Modulos.DatosYValidaciones.ValidacionNumeroCelular()
+                    return Datos
+                elif choise == 9:
+                    user["Informacion_de_Contacto"]["Correo_Electronico"] = Modulos.DatosYValidaciones.ValidacionNoVacioAceptaEspacios(input("Correo Electronico\n> "))
+                    return Datos
+                elif choise == 10:
+                    user["Historial"]["Categoria"] = Modulos.DatosYValidaciones.ValidacionCategoriaCliente()
+                    return Datos
+                elif choise == 0:
+                    print("Valor Invalido")
                     return Datos
                 else:
-                    user["Documento"] = Documento_Validado
-            elif choise == 3:
-                user["Rol"] = Modulos.DatosYValidaciones.Validacion_Rol()
-                return Datos
-            elif choise == 4:
-                user["Fecha_Nacimiento"] = Modulos.DatosYValidaciones.ValidacionFechaNacimiento()
-                return Datos
-            elif choise == 5:
-                user["Genero"] = Modulos.DatosYValidaciones.ValidacionGenero()
-                return Datos
-            elif choise == 6:
-                user["Ciudad"] = Modulos.DatosYValidaciones.ValidacionNoVacioLetras("Ingrese su Ciudad de Residencia\n")
-                return Datos
-            elif choise == 7:
-                user["Informacion_de_Contacto"]["Direccion_User"] = Modulos.DatosYValidaciones.ValidacionNoVacioAceptaEspacios(input("Direccion de Residencia\n> "))
-                return Datos
-            elif choise == 8:
-                user["Informacion_de_Contacto"]["Telefono_Celular"] = Modulos.DatosYValidaciones.ValidacionNumeroCelular()
-                return Datos
-            elif choise == 9:
-                user["Informacion_de_Contacto"]["Correo_Electronico"] = Modulos.DatosYValidaciones.ValidacionNoVacioAceptaEspacios(input("Correo Electronico\n> "))
-                return Datos
-            elif choise == 10:
-                user["Historial"]["Categoria"] = Modulos.DatosYValidaciones.ValidacionCategoriaCliente()
-                return Datos
-            elif choise == 0:
-                print("Valor Invalido")
-                return Datos
-            else:
-                print("Valor Invalido")
-                return Datos
+                    print("Valor Invalido")
+                    return Datos
     print("Documento No Encontrado")
     
 def EliminarPerfilesUsuarios(Datos):

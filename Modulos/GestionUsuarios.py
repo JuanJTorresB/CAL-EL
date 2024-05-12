@@ -31,7 +31,28 @@ def CrearPerfilesUsuarios(Datos):
 def ListarPerfilesUsuarios(Datos):
     Usuarios = Datos["Usuarios"]
     for Usuario in Usuarios:
-        print(Usuario)
+        print("Nombre: ", {Usuario["Nombre_User"]})
+        print("Documento:", {Usuario["Documento"]})
+        print("Rol:", {Usuario["Rol"]})
+        print("Fecha de Nacimiento: ", {Usuario["Fecha_Nacimiento"]})
+        print("Genero: ", {Usuario["Genero"]})
+        print("Ciudad: ", {Usuario["Ciudad"]})
+        print("Informacion de Contacto")
+        print(Usuario["Informacion_de_Contacto"]["Direccion_User"].center(50))
+        print(Usuario["Informacion_de_Contacto"]["Telefono_Celular"].center(50))
+        print(Usuario["Informacion_de_Contacto"]["Correo_Electronico"].center(50))
+        print("Historial")
+        print(Usuario["Historial"]["Categoria"].center(50))
+        print("Reclamaciones".center(50))
+        Reclamaciones = Usuario["Historial"]["Reclamaciones"]
+        for reclamacion in Reclamaciones:
+            print(reclamacion["Fecha"].center(50))
+            print(reclamacion["Descripcion"].center(50))
+        print("Sugerencias".center(50))
+        Sugerencias = Usuario["Historial"]["Sugerencias"]
+        for Sugerencia in Sugerencias:
+            print(Sugerencia["Fecha"].center(50))
+            print(Sugerencia["Descripcion"].center(50))
         print("")
         
 def ActualizarPerfilesUsuarios(Datos):

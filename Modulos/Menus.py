@@ -65,7 +65,10 @@ def MenuAdmin(Datos):
         print("(4) Ver Reportes Comerciales".center(50))
         print("")
         print("")
-        print("(5) SALIR".center(50))
+        print("(5) Gestionar Ventas".center(50))
+        print("")
+        print("")
+        print("(6) SALIR".center(50))
         print("")
         choise = Eleccion_Numerica()           # Pide el input int
         if choise == 1:
@@ -77,6 +80,8 @@ def MenuAdmin(Datos):
         elif choise == 4:
             print(4)
         elif choise == 5:
+            print(5)
+        elif choise == 6:
             break
         elif choise == 0:
             print("")
@@ -146,7 +151,7 @@ def MenuGestionarServicios(Datos):
         if choise == 1:
             Datos = Modulos.GestionServicios.CrearServicios(Datos)
         elif choise == 2:
-            Modulos.GestionUsuarios.ListarPerfilesUsuarios(Datos)
+            Modulos.GestionServicios.ListarServicios(Datos)
         elif choise == 3:
             Datos = Modulos.GestionUsuarios.ActualizarPerfilesUsuarios(Datos)
         elif choise == 4:
