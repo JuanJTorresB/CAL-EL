@@ -25,6 +25,8 @@ def Menu_Inicial(Datos):
                 return Rol
             elif Rol == "User":
                 return Rol
+            else:
+                return 0
         elif choise == 2:
             print(2)
         elif choise == 3:
@@ -203,7 +205,8 @@ def MenuGestionarProductos(Datos):
             print("Valor Invalido")
 
 def MenuUser(Datos):
-    print("*"*50)
+    print("Menu User")
+"""    print("*"*50)
     print("")
     print("BIENVENIDO USER".center(50))
     print("")
@@ -220,4 +223,4 @@ def MenuUser(Datos):
         print("")
         print("")
         print("(3) SALIR".rjust(28))
-        print("")
+        print("")"""

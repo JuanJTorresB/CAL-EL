@@ -38,10 +38,17 @@ print("")
 print("BIENVENIDO".center(50))
 print("")
 
-Rol = Menu_Inicial(Datos)
-if Rol == "Admin":
+while True:
+  Rol = Menu_Inicial(Datos)
+  if Rol == "Admin":
     MenuAdmin(Datos)
-elif Rol == "User":
+    break
+  elif Rol == "User":
     MenuUser(Datos)
+    break
+  elif Rol == 0:
+    print("Vuelve a Intentarlo")
+  else:
+    print("Vuelve a Intentarlo")
     
 Guardar_datos(Datos, JSON_UBICACION)
