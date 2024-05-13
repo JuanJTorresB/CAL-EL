@@ -241,3 +241,17 @@ def ValidacionTipodeVentadeProductos():
                 return("Devuelto")
             else:
                 print("Tipo de Producto No valido".center(50, "="))
+
+def ValidacionTipodeVentadeServicios():
+     while True:
+        try:
+            Marca_Ingresada = int(input('Ingrese el Estado del servicio (1) "Activo" (2) "Inactivo\n> '))
+        except ValueError:
+            Modulos.ManejoExcepiciones.LogExcepciones("Value Error", "202", "DatosYValidaciones")
+        else:
+            if Marca_Ingresada == 1:
+                return("Activo")
+            elif Marca_Ingresada == 2:
+                return("Inactivo")
+            else:
+                print("Estado de Servicio No valido".center(50, "="))

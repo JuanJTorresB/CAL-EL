@@ -212,31 +212,92 @@ def MenuGestionarVentas(Datos):
         print("")
         print("Que Desea Hacer".center(50))
         print("")
-        print("(1) Registrar Venta Productos".center(50))
+        print("(1) Registrar Nueva Venta Productos".center(50))
         print("")
         print("")                               # Imprime las opciones del menu Admin
-        print("(2) Registrar Venta Servicios".center(50))
+        print("(2) Registrar Nueva Venta Servicios".center(50))
         print("")
         print("")
-        print("(3) Buscar por Caregoria".center(50))
+        print("(3) Listar Ventas Servicios".center(50))
         print("")
         print("")
-        print("(4) Volver".center(50))
+        print("(4) Listar Ventas Productos".center(50))
+        print("")
+        print("")
+        print("(5) Actualizar Ventas Servicios".center(50))
+        print("")
+        print("")
+        print("(6) Actualizar Ventas Productos".center(50))
+        print("")
+        print("")
+        print("(7) Volver".center(50))
         print("")
         choise = Eleccion_Numerica()           # Pide el input int
         if choise == 1:
             Datos = Modulos.GestionVentas.RegistrarVentaProductos(Datos)
         elif choise == 2:
-            "a"
+            Datos = Modulos.GestionVentas.RegistrarVentaServicios(Datos)
         elif choise == 3:
-            "a"
+            Modulos.GestionVentas.ListarVentasServicios(Datos)
         elif choise == 4:
+            Modulos.GestionVentas.ListarVentasProductos(Datos)
+        elif choise == 5:
+            Modulos.GestionVentas.ActualizarVentasServicios(Datos)
+        elif choise == 6:
+            Modulos.GestionVentas.ActualizarVentasProductos(Datos)
+        elif choise == 7:
             break
         elif choise == 0:
             print("")
         else:
             print("Valor Invalido")
             
+def MenuReportesComerciales():
+    while True:
+        print("")
+        print("*"*50)
+        print("")
+        print("Que Desea Hacer".center(50))
+        print("")
+        print("(1) Registrar Nueva Venta Productos".center(50))
+        print("")
+        print("")                               # Imprime las opciones del menu Admin
+        print("(2) Registrar Nueva Venta Servicios".center(50))
+        print("")
+        print("")
+        print("(3) Listar Ventas Servicios".center(50))
+        print("")
+        print("")
+        print("(4) Listar Ventas Productos".center(50))
+        print("")
+        print("")
+        print("(5) Actualizar Ventas Servicios".center(50))
+        print("")
+        print("")
+        print("(6) Actualizar Ventas Productos".center(50))
+        print("")
+        print("")
+        print("(7) Volver".center(50))
+        print("")
+        choise = Eleccion_Numerica()           # Pide el input int
+        if choise == 1:
+            Datos = Modulos.GestionVentas.RegistrarVentaProductos(Datos)
+        elif choise == 2:
+            Datos = Modulos.GestionVentas.RegistrarVentaServicios(Datos)
+        elif choise == 3:
+            Modulos.GestionVentas.ListarVentasServicios(Datos)
+        elif choise == 4:
+            Modulos.GestionVentas.ListarVentasProductos(Datos)
+        elif choise == 5:
+            Modulos.GestionVentas.ActualizarVentasServicios(Datos)
+        elif choise == 6:
+            Modulos.GestionVentas.ActualizarVentasProductos(Datos)
+        elif choise == 7:
+            break
+        elif choise == 0:
+            print("")
+        else:
+            print("Valor Invalido")
 def MenuUser(Datos):
     print("Menu User")
     """    print("*"*50)

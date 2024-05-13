@@ -113,7 +113,7 @@
                 {
                     "Documento": 1097494351,
                     "Fecha_Adquisicion": "2024-05-10",
-                    "Estado": "Enviado",
+                    "Estado": "Recibido",
                     "Cantidad": 1
                 }
             ]
@@ -146,21 +146,21 @@
             "Adquirido_por": [
                 {
                     "Documento": "1097494375",
-                    "Fecha_Adquisicion": "2024/12/05",
+                    "Fecha_Adquisicion": "2024-05-12",
                     "Estado": "Enviado",
                     "Cantidad": 1
                 },
                 {
                     "Documento": "1097494374",
-                    "Fecha_Adquisicion": "2024/12/05",
+                    "Fecha_Adquisicion": "2024-05-12",
                     "Estado": "Enviado",
                     "Cantidad": 1
                 },
                 {
                     "Documento": "1097494375",
-                    "Fecha_Adquisicion": "2024/12/05",
-                    "Estado": "Recibido",
-                    "Cantidad": 1
+                    "Fecha_Adquisicion": "2024-05-12",
+                    "Estado": "Enviado",
+                    "Cantidad": 4
                 }
             ]
         }
@@ -176,7 +176,7 @@
                 {
                     "Documento": 1097494351,
                     "Fecha_Adquisicion": "2024-05-10",
-                    "Estado": "Activo",
+                    "Estado": "Recibido",
                     "Cantidad": 1
                 }
             ]
