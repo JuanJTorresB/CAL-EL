@@ -115,6 +115,12 @@
                     "Fecha_Adquisicion": "2024-05-10",
                     "Estado": "Recibido",
                     "Cantidad": 1
+                },
+                {
+                    "Documento": 1097494375,
+                    "Fecha_Adquisicion": "2024-05-10",
+                    "Estado": "Recibido",
+                    "Cantidad": 9
                 }
             ]
         },

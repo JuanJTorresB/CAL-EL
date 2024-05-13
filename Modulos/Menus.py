@@ -1,5 +1,6 @@
 import Modulos.GestionProductos
 import Modulos.GestionVentas
+import Modulos.GestionReportes
 import Modulos.ManejoExcepiciones, Modulos.InicioSesion, Modulos.GestionUsuarios, Modulos.GestionServicios
 import Modulos.Menus
 
@@ -83,7 +84,7 @@ def MenuAdmin(Datos):
         elif choise == 3:
             MenuGestionarProductos(Datos)
         elif choise == 4:
-            print(4)
+            MenuReportesComerciales(Datos)
         elif choise == 5:
             MenuGestionarVentas(Datos)
         elif choise == 6:
@@ -252,20 +253,20 @@ def MenuGestionarVentas(Datos):
         else:
             print("Valor Invalido")
             
-def MenuReportesComerciales():
+def MenuReportesComerciales(Datos):
     while True:
         print("")
         print("*"*50)
         print("")
         print("Que Desea Hacer".center(50))
         print("")
-        print("(1) Registrar Nueva Venta Productos".center(50))
+        print("(1) Cantidad de Productos Vendidos".center(50))
         print("")
         print("")                               # Imprime las opciones del menu Admin
-        print("(2) Registrar Nueva Venta Servicios".center(50))
+        print("(2) Cantidad de Productos Servicios".center(50))
         print("")
         print("")
-        print("(3) Listar Ventas Servicios".center(50))
+        print("(3) Producto Mas Vendido Por Ciudad".center(50))
         print("")
         print("")
         print("(4) Listar Ventas Productos".center(50))
@@ -281,9 +282,9 @@ def MenuReportesComerciales():
         print("")
         choise = Eleccion_Numerica()           # Pide el input int
         if choise == 1:
-            Datos = Modulos.GestionVentas.RegistrarVentaProductos(Datos)
+            Modulos.GestionReportes.ContarCantidadVendidasProducto(Datos)
         elif choise == 2:
-            Datos = Modulos.GestionVentas.RegistrarVentaServicios(Datos)
+            Modulos.GestionReportes.ContarCantidadVendidasServicio(Datos)
         elif choise == 3:
             Modulos.GestionVentas.ListarVentasServicios(Datos)
         elif choise == 4:
