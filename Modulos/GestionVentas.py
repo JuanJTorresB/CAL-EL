@@ -1,5 +1,5 @@
 from Modulos.GestionProductos import PedirCodigoIdentificador
-from Modulos.DatosYValidaciones import PedirDocumento, DocumentoNoRepetido, ValidacionTipodeVentadeProductos, ValidacionTipoServicio, ValidacionTipodeVentadeServicios
+from Modulos.DatosYValidaciones import PedirDocumento, DocumentoNoRepetido, ValidacionTipodeVentadeProductos, ValidacionTipoServicio, ValidacionTipodeVentadeServicios, ValidacionNoVacioLetras
 import Modulos.Menus
 from datetime import date
 
@@ -15,6 +15,7 @@ def RegistrarVentaProductos(Datos):
                 print("Documento de Usuario No Registrado")
                 return Datos
             Factura["Documento"] = Documento_Validado
+            Factura["Ciudad"] = ValidacionNoVacioLetras("Ingrese la Ciudad en la que se Realizo la Venta")
             Factura["Fecha_Adquisicion"] = str(date.today())
             Factura["Estado"] = ValidacionTipodeVentadeProductos()
             print("Cantidad")
@@ -36,8 +37,9 @@ def RegistrarVentaServicios(Datos):
                 print("Documento de Usuario No Registrado")
                 return Datos
             Factura["Documento"] = Documento_Validado
+            Factura["Ciudad"] = ValidacionNoVacioLetras("Ingrese la Ciudad en la que se Realizo la Venta")
             Factura["Fecha_Adquisicion"] = str(date.today())
-            Factura["Estado"] = ValidacionTipoServicio()
+            Factura["Estado"] = ValidacionTipodeVentadeServicios()
             print("Cantidad")
             Factura["Cantidad"] = Modulos.Menus.Eleccion_Numerica()
             Servicio["Adquirido_por"].append(Factura)
@@ -55,6 +57,7 @@ def ListarVentasServicios(Datos):
         print("Precio: ", Servicio["Precio"])
         for Registro in Servicio["Adquirido_por"]:
             print("Documento: ", Registro["Documento"])
+            print("Ciudad de Adquisicion: ", Registro["Ciudad"])
             print("Fecha_Adquisicion: ", Registro["Fecha_Adquisicion"])
             print("Estado: ", Registro["Estado"])
             print("Cantidad: ", Registro["Cantidad"])
@@ -70,6 +73,7 @@ def ListarVentasProductos(Datos):
         print("Precio: ", Producto["Precio"])
         for Registro in Producto["Adquirido_por"]:
             print("Documento: ", Registro["Documento"])
+            print("Ciudad de Adquisicion: ", Registro["Ciudad"])
             print("Fecha_Adquisicion: ", Registro["Fecha_Adquisicion"])
             print("Estado: ", Registro["Estado"])
             print("Cantidad: ", Registro["Cantidad"])
@@ -87,6 +91,7 @@ def ActualizarVentasServicios(Datos):
                     print("Que desea Actualizar".center(50))
                     print("(1) Estado")
                     print("(2) Cantidad")
+                    print("(3) Ciudad de la Venta")
                     choise = Modulos.Menus.Eleccion_Numerica()
                     if choise == 1:
                         Adquisiciones["Estado"] = ValidacionTipodeVentadeServicios()
@@ -94,6 +99,9 @@ def ActualizarVentasServicios(Datos):
                     elif choise == 2:
                         print("Cantidad")
                         Adquisiciones["Cantidad"] = Modulos.Menus.Eleccion_Numerica()
+                        return Datos
+                    elif choise == 3:
+                        Adquisiciones["Ciudad"] = ValidacionNoVacioLetras("Ingrese la Ciudad en la que se Realizo la Venta")
                         return Datos
                     elif choise == 0:
                         print("")
@@ -116,6 +124,7 @@ def ActualizarVentasProductos(Datos):
                     print("Que desea Actualizar".center(50))
                     print("(1) Estado")
                     print("(2) Cantidad")
+                    print("(3) Ciudad de la Venta")
                     choise = Modulos.Menus.Eleccion_Numerica()
                     if choise == 1:
                         Adquisiciones["Estado"] = ValidacionTipodeVentadeProductos()
@@ -123,6 +132,9 @@ def ActualizarVentasProductos(Datos):
                     elif choise == 2:
                         print("Cantidad")
                         Adquisiciones["Cantidad"] = Modulos.Menus.Eleccion_Numerica()
+                        return Datos
+                    elif choise == 3:
+                        Adquisiciones["Ciudad"] = ValidacionNoVacioLetras("Ingrese la Ciudad en la que se Realizo la Venta")
                         return Datos
                     elif choise == 0:
                         print("")

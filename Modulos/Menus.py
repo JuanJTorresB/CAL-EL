@@ -269,7 +269,7 @@ def MenuReportesComerciales(Datos):
         print("(3) Producto Mas Vendido Por Ciudad".center(50))
         print("")
         print("")
-        print("(4) Listar Ventas Productos".center(50))
+        print("(4) Servicio Mas Vendido Por Ciudad".center(50))
         print("")
         print("")
         print("(5) Actualizar Ventas Servicios".center(50))
@@ -286,9 +286,9 @@ def MenuReportesComerciales(Datos):
         elif choise == 2:
             Modulos.GestionReportes.ContarCantidadVendidasServicio(Datos)
         elif choise == 3:
-            Modulos.GestionVentas.ListarVentasServicios(Datos)
+            Modulos.GestionReportes.ContarProductosPorCiudad(Datos)
         elif choise == 4:
-            Modulos.GestionVentas.ListarVentasProductos(Datos)
+            Modulos.GestionReportes.ContarServiciosPorCiudad(Datos)
         elif choise == 5:
             Modulos.GestionVentas.ActualizarVentasServicios(Datos)
         elif choise == 6:

@@ -112,12 +112,14 @@
             "Adquirido_por": [
                 {
                     "Documento": 1097494351,
+                    "Ciudad": "Bucaramanga",
                     "Fecha_Adquisicion": "2024-05-10",
                     "Estado": "Recibido",
                     "Cantidad": 1
                 },
                 {
                     "Documento": 1097494375,
+                    "Ciudad": "Bucaramanga",
                     "Fecha_Adquisicion": "2024-05-10",
                     "Estado": "Recibido",
                     "Cantidad": 9
@@ -152,21 +154,31 @@
             "Adquirido_por": [
                 {
                     "Documento": "1097494375",
+                    "Ciudad": "Bucaramanga",
                     "Fecha_Adquisicion": "2024-05-12",
                     "Estado": "Enviado",
                     "Cantidad": 1
                 },
                 {
                     "Documento": "1097494374",
+                    "Ciudad": "Bucaramanga",
                     "Fecha_Adquisicion": "2024-05-12",
                     "Estado": "Enviado",
                     "Cantidad": 1
                 },
                 {
                     "Documento": "1097494375",
+                    "Ciudad": "Floridablanca",
                     "Fecha_Adquisicion": "2024-05-12",
                     "Estado": "Enviado",
                     "Cantidad": 4
+                },
+                {
+                    "Documento": "1097494351",
+                    "Ciudad": "Bucaramanga",
+                    "Fecha_Adquisicion": "2024-05-13",
+                    "Estado": "Recibido",
+                    "Cantidad": 3
                 }
             ]
         }
@@ -181,6 +193,7 @@
             "Adquirido_por": [
                 {
                     "Documento": 1097494351,
+                    "Ciudad": "Bucaramanga",
                     "Fecha_Adquisicion": "2024-05-10",
                     "Estado": "Recibido",
                     "Cantidad": 1
@@ -196,6 +209,7 @@
             "Adquirido_por": [
                 {
                     "Documento": 1097494351,
+                    "Ciudad": "Bucaramanga",
                     "Fecha_Adquisicion": "2024-05-10",
                     "Estado": "Activo",
                     "Cantidad": 1
@@ -216,7 +230,22 @@
             "Tipo": "Fibra Optica",
             "Descripcion": "Conectados V 5.3 Mx: Cargo Fijo Mensual: $59.900. Incluye: Llamadas ilimitadas Nal y a USA, Canada, Mexico y Pto Rico. SMS Ilimitado a Todo Destino Nal. Navegacion: 100GB para uso exclusivo de la linea y 15GB para compartir con otros dispositivos al alcance del movil. Agotados los datos incluidos, tendra acceso a funcionalidades seleccionadas de Instagram, Facebook App, Twitter y WhatsApp. Vlr Min adic LDI: Otros Destinos Hispanoamerica: $1.144, Resto del Mundo: $1.331. Las llamadas LDI se deben realizar por el 00444, generan cobro llamadas realizadas por otros operadores y no aplica marcaciones satelitales ni destinos especiales. No Incluye: Roaming Intnal, LDI a Otros Destinos, MMS, ni descarga de contenidos con costo.",
             "Precio": 60000,
-            "Adquirido_por": []
+            "Adquirido_por": [
+                {
+                    "Documento": "1097494351",
+                    "Ciudad": "Bucaramanga",
+                    "Fecha_Adquisicion": "2024-05-13",
+                    "Estado": "Activo",
+                    "Cantidad": 1
+                },
+                {
+                    "Documento": "1097494374",
+                    "Ciudad": "Floridablanca",
+                    "Fecha_Adquisicion": "2024-05-13",
+                    "Estado": "Inactivo",
+                    "Cantidad": 1
+                }
+            ]
         }
     ]
 }
