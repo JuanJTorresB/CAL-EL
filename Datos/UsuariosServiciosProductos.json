@@ -331,6 +331,34 @@
                 "Reclamaciones": [],
                 "Sugerencias": []
             }
+        },
+        {
+            "Nombre_User": "Sekiro",
+            "Documento": "1235746098",
+            "Rol": "User",
+            "Fecha_Nacimiento": "2000/12/24",
+            "Genero": "F",
+            "Ciudad": "Tokio",
+            "Informacion_de_Contacto": {
+                "Direccion_User": "Calle 65 #45-125",
+                "Telefono_Celular": "4152630987",
+                "Correo_Electronico": "Sekiro@gmail.com"
+            },
+            "Historial": {
+                "Categoria": "Nuevo Cliente",
+                "Reclamaciones": [
+                    {
+                        "Fecha": "2024-05-14",
+                        "Descripcion": "Mi Producto No Me Ha llegado"
+                    }
+                ],
+                "Sugerencias": [
+                    {
+                        "Fecha": "2024-05-14",
+                        "Descripcion": "La Pagina web No es muy Intuitiva"
+                    }
+                ]
+            }
         }
     ],
     "Productos": [

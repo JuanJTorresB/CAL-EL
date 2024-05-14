@@ -26,6 +26,7 @@ def CrearPerfilesUsuarios(Datos):
         Usuario["Informacion_de_Contacto"] = Informacion_de_Contacto
         Usuario["Historial"] = Historial
         Datos["Usuarios"].append(Usuario)
+        print("Perfil De Usuario Creado")
         return Datos
     
 def ListarPerfilesUsuarios(Datos):
@@ -82,29 +83,38 @@ def ActualizarPerfilesUsuarios(Datos):
                     return Datos
                 else:
                     user["Documento"] = Documento_Validado
+                    print("Documento Actualizado")
             elif choise == 3:
                 user["Rol"] = Modulos.DatosYValidaciones.Validacion_Rol()
+                print("Rol Actualizado")
                 return Datos
             elif choise == 4:
                 user["Fecha_Nacimiento"] = Modulos.DatosYValidaciones.ValidacionFechaNacimiento()
+                print("Fecha Nacimiento Actualizada")
                 return Datos
             elif choise == 5:
                 user["Genero"] = Modulos.DatosYValidaciones.ValidacionGenero()
+                print("Genero Actualizado")
                 return Datos
             elif choise == 6:
                 user["Ciudad"] = Modulos.DatosYValidaciones.ValidacionNoVacioLetras("Ingrese su Ciudad de Residencia\n")
+                print("Ciudad Actualizada")
                 return Datos
             elif choise == 7:
                 user["Informacion_de_Contacto"]["Direccion_User"] = Modulos.DatosYValidaciones.ValidacionNoVacioAceptaEspacios(input("Direccion de Residencia\n> "))
+                print("Direccion Actualizada")
                 return Datos
             elif choise == 8:
                 user["Informacion_de_Contacto"]["Telefono_Celular"] = Modulos.DatosYValidaciones.ValidacionNumeroCelular()
+                print("Telefono Actualizado")
                 return Datos
             elif choise == 9:
                 user["Informacion_de_Contacto"]["Correo_Electronico"] = Modulos.DatosYValidaciones.ValidacionNoVacioAceptaEspacios(input("Correo Electronico\n> "))
+                print("Correo Electronico Actualizado")
                 return Datos
             elif choise == 10:
                 user["Historial"]["Categoria"] = Modulos.DatosYValidaciones.ValidacionCategoriaCliente()
+                print("Categoria Actualizado")
                 return Datos
             elif choise == 0:
                 print("")
@@ -122,6 +132,7 @@ def EliminarPerfilesUsuarios(Datos):
         if user["Documento"] == Documento_Usuario:
             Usuarios.remove(user)
             Datos["Usuarios"] = Usuarios
+            print("Perfil Eliminado")
             return Datos
     print("Documento No ENcontrado".center(50, "="))
     return Datos
