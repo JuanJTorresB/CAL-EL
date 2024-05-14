@@ -88,7 +88,7 @@
             "Rol": "User",
             "Fecha_Nacimiento": "2006/9/7",
             "Genero": "F",
-            "Ciudad": "Brisbane",
+            "Ciudad": "Floridablanca",
             "Informacion_de_Contacto": {
                 "Direccion_User": "Calle 55",
                 "Telefono_Celular": "3204828077",
@@ -127,6 +127,24 @@
                 "Reclamaciones": [],
                 "Sugerencias": []
             }
+        },
+        {
+            "Nombre_User": "David",
+            "Documento": "1002457802",
+            "Rol": "User",
+            "Fecha_Nacimiento": "2001/6/17",
+            "Genero": "Otro",
+            "Ciudad": "Bucaramanga",
+            "Informacion_de_Contacto": {
+                "Direccion_User": "rumania",
+                "Telefono_Celular": "3160514028",
+                "Correo_Electronico": "ddsafsdf"
+            },
+            "Historial": {
+                "Categoria": "Nuevo Cliente",
+                "Reclamaciones": [],
+                "Sugerencias": []
+            }
         }
     ],
     "Productos": [
@@ -140,7 +158,7 @@
             "Adquirido_por": [
                 {
                     "Documento": 1097494351,
-                    "Ciudad": "Bucaramanga",
+                    "Ciudad": "Floridablanca",
                     "Fecha_Adquisicion": "2024-05-10",
                     "Estado": "Recibido",
                     "Cantidad": 1
@@ -240,7 +258,7 @@
                     "Ciudad": "Bucaramanga",
                     "Fecha_Adquisicion": "2024-05-10",
                     "Estado": "Activo",
-                    "Cantidad": 1
+                    "Cantidad": 5
                 }
             ]
         },

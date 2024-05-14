@@ -1,4 +1,5 @@
 from datetime import date
+
 UBI_USUARIO_ACTUAL = "Datos/UsuarioActual.txt"
 
 def RegistrarReclamos(Datos):
@@ -18,7 +19,6 @@ def RegistrarReclamos(Datos):
             return Datos
     print("No estas Registrado")
     return Datos
-
     
 def RegistrarSugerencias(Datos):
     Usuarios = Datos["Usuarios"]

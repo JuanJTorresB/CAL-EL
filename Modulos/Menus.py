@@ -331,7 +331,9 @@ def MenuUser(Datos):
         if choise == 1:
             MenuVerCatalogo(Datos)
         elif choise == 2:
-            "a"
+            Modulos.CatalogoYRecomendaciones.ProductoMasPopularPaisUser(Datos)
+            print("")
+            Modulos.CatalogoYRecomendaciones.ServicioMasPopularPaisUser(Datos)
         elif choise == 3:
             Datos = Modulos.ReclamosYSugerencias.RegistrarReclamos(Datos)
         elif choise == 4:
