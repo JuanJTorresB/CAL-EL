@@ -6,7 +6,7 @@
             "Rol": "Admin",
             "Fecha_Nacimiento": "2006/1/8",
             "Genero": "F",
-            "Ciudad": "Bucaramanga",
+            "Ciudad": "Cali",
             "Informacion_de_Contacto": {
                 "Direccion_User": "Calle 204A #87-246",
                 "Telefono_Celular": "5137682060",
@@ -313,6 +313,24 @@
                     }
                 ]
             }
+        },
+        {
+            "Nombre_User": "Naruto Uzumaki",
+            "Documento": "9086753421",
+            "Rol": "User",
+            "Fecha_Nacimiento": "2001/10/10",
+            "Genero": "M",
+            "Ciudad": "Konohagakure",
+            "Informacion_de_Contacto": {
+                "Direccion_User": "Avenida de la Hoja",
+                "Telefono_Celular": "6543219087",
+                "Correo_Electronico": "NarutoUzu@gmail.com"
+            },
+            "Historial": {
+                "Categoria": "Clientes Regulares",
+                "Reclamaciones": [],
+                "Sugerencias": []
+            }
         }
     ],
     "Productos": [
@@ -404,18 +422,42 @@
                     "Cantidad": 1
                 },
                 {
+                    "Documento": "1097494351",
+                    "Ciudad": "Bucaramanga",
+                    "Fecha_Adquisicion": "2024-05-13",
+                    "Estado": "Recibido",
+                    "Cantidad": 3
+                }
+            ]
+        },
+        {
+            "Nombre_Producto": "Iphone 15 128gb 5g",
+            "Codigo_Identificador": 5,
+            "Tipo": "Celular",
+            "Descripcion": "NEGRO NOCHE Iphone 15 128gb 5g",
+            "Marca": "Xiaomi",
+            "Precio": 4435960,
+            "Adquirido_por": [
+                {
                     "Documento": "1097494375",
-                    "Ciudad": "Floridablanca",
+                    "Ciudad": "Bucaramanga",
                     "Fecha_Adquisicion": "2024-05-12",
                     "Estado": "Enviado",
-                    "Cantidad": 4
+                    "Cantidad": 7
+                },
+                {
+                    "Documento": "1097494374",
+                    "Ciudad": "Bucaramanga",
+                    "Fecha_Adquisicion": "2024-05-12",
+                    "Estado": "Enviado",
+                    "Cantidad": 6
                 },
                 {
                     "Documento": "1097494351",
                     "Ciudad": "Bucaramanga",
                     "Fecha_Adquisicion": "2024-05-13",
                     "Estado": "Recibido",
-                    "Cantidad": 3
+                    "Cantidad": 1
                 }
             ]
         }
@@ -450,6 +492,13 @@
                     "Fecha_Adquisicion": "2024-05-10",
                     "Estado": "Activo",
                     "Cantidad": 5
+                },
+                {
+                    "Documento": "1097494374",
+                    "Ciudad": "Floridablanca",
+                    "Fecha_Adquisicion": "2024-05-13",
+                    "Estado": "Inactivo",
+                    "Cantidad": 1
                 }
             ]
         },
@@ -459,7 +508,22 @@
             "Codigo_Identificador": 3,
             "Descripcion": " Cargo Fijo Mensual: $55.900. Incluye: Llamadas ilimitadas Nal y a USA, Canada, Mexico y Pto Rico. SMS Ilimitado a Todo Destino Nal. Navegacion: 90GB para uso exclusivo de la linea y 10GB para compartir con otros dispositivos al alcance del movil. Agotados los datos incluidos, tendra acceso a funcionalidades seleccionadas de Instagram, Facebook App, Twitter y Whatsapp. Vlr Min adic LDI: Otros Destinos Hispanoamerica: $1.144, Resto del Mundo: $1.331. Las llamadas LDI se deben realizar por el 00444, generan cobro llamadas realizadas por otros operadores y no aplica marcaciones satelitales ni destinos especiales. No Incluye: Roaming Intnal, LDI a Otros Destinos, MMS, ni descarga de contenidos con costo.",
             "Precio": 55900,
-            "Adquirido_por": []
+            "Adquirido_por": [
+                {
+                    "Documento": "1097494351",
+                    "Ciudad": "Bucaramanga",
+                    "Fecha_Adquisicion": "2024-05-13",
+                    "Estado": "Activo",
+                    "Cantidad": 1
+                },
+                {
+                    "Documento": "1097494374",
+                    "Ciudad": "Floridablanca",
+                    "Fecha_Adquisicion": "2024-05-13",
+                    "Estado": "Inactivo",
+                    "Cantidad": 1
+                }
+            ]
         },
         {
             "Nombre_Servicio": "Conectados V 5.3 MX",

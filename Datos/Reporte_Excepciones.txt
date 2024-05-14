@@ -238,3 +238,15 @@ Mensaje de Excepcion "Value Error", en la linea "42", en el archivo "Menus.py" -
 Mensaje de Excepcion "Value Error", en la linea "46", en el archivo "DatosYValidaciones" - 2024-05-14 03:12:51.730286
 Mensaje de Excepcion "Value Error", en la linea "46", en el archivo "DatosYValidaciones" - 2024-05-14 03:12:56.826755
 Mensaje de Excepcion "Value Error", en la linea "46", en el archivo "DatosYValidaciones" - 2024-05-14 03:13:03.329774
+Mensaje de Excepcion "Value Error", en la linea "25", en el archivo "DatosYValidaciones" - 2024-05-14 04:01:39.612470
+Mensaje de Excepcion "Value Error", en la linea "25", en el archivo "DatosYValidaciones" - 2024-05-14 04:01:42.004080
+Mensaje de Excepcion "Value Error", en la linea "100", en el archivo "DatosYValidaciones" - 2024-05-14 04:03:31.436151
+Mensaje de Excepcion "Value Error", en la linea "148", en el archivo "DatosYValidaciones" - 2024-05-14 04:06:33.764832
+Mensaje de Excepcion "Value Error", en la linea "148", en el archivo "DatosYValidaciones" - 2024-05-14 04:06:38.292049
+Mensaje de Excepcion "Value Error", en la linea "160", en el archivo "DatosYValidaciones" - 2024-05-14 04:06:56.699781
+Mensaje de Excepcion "Value Error", en la linea "46", en el archivo "DatosYValidaciones" - 2024-05-14 04:11:17.364124
+Mensaje de Excepcion "Value Error", en la linea "148", en el archivo "DatosYValidaciones" - 2024-05-14 04:13:11.188501
+Mensaje de Excepcion "Value Error", en la linea "42", en el archivo "Menus.py" - 2024-05-14 04:21:19.485563
+Mensaje de Excepcion "Value Error", en la linea "42", en el archivo "Menus.py" - 2024-05-14 04:30:10.210490
+Mensaje de Excepcion "Value Error", en la linea "42", en el archivo "Menus.py" - 2024-05-14 04:31:36.709444
+Mensaje de Excepcion "Value Error", en la linea "46", en el archivo "DatosYValidaciones" - 2024-05-14 04:34:44.853380

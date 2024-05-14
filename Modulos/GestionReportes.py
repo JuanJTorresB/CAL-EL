@@ -8,9 +8,10 @@ def ContarCantidadVendidasProducto(Datos):
     Productos = Datos["Productos"]
     for Produto in Productos:
         if Produto["Codigo_Identificador"] == Identidicador:
+            Nombre_Producto = Produto["Nombre_Producto"]
             for Adquisiciones in Produto["Adquirido_por"]:
                 Contador += Adquisiciones["Cantidad"]
-    print("Se Han Vendido: ", Contador," de ", Produto["Nombre_Producto"])
+    print("Se Han Vendido: ", Contador," de ", Nombre_Producto)
     
 def ContarCantidadVendidasServicio(Datos):
     print("Ingrese el Codigo Para Ver La Cantidad Vendida del Servicio")
@@ -19,9 +20,10 @@ def ContarCantidadVendidasServicio(Datos):
     Servicios = Datos["Servicios"]
     for Servicio in Servicios:
         if Servicio["Codigo_Identificador"] == Identidicador:
+            Nombre_Servicio = Servicio["Nombre_Servicio"]
             for Adquisiciones in Servicio["Adquirido_por"]:
                 Contador += Adquisiciones["Cantidad"]
-    print("Se Han Vendido: ", Contador," de ", Servicio["Nombre_Producto"])
+    print("Se Han Vendido: ", Contador," de ", Nombre_Servicio)
     
 def ContarProductosPorCiudad(Datos):
     print("Ingrese el Codigo Para Ver La Cantidad Vendida del Producto por Ciudad")
@@ -46,7 +48,7 @@ def ContarProductosPorCiudad(Datos):
                         Contador += Adquisiciones["Cantidad"]
         print("Se Han Vendido: ", Contador)
     else:
-        print('En "{Ciudad_Input}" No Han habido Ventas de este Producto')
+        print(f'En "{Ciudad_Input}" No Han habido Ventas de este Producto')
 
 def ContarServiciosPorCiudad(Datos):
     print("Ingrese el Codigo Para Ver La Cantidad Vendida del Servicio por Ciudad")
@@ -71,7 +73,7 @@ def ContarServiciosPorCiudad(Datos):
                         Contador += Adquisiciones["Cantidad"]
         print("Se Han Vendido: ", Contador)
     else:
-        print('En "{Ciudad_Input}" No Han habido Ventas de este Servicio')
+        print(f'En "{Ciudad_Input}" No Han habido Ventas de este Servicio')
 
 def ProductoMasPopular(Datos):
     Mayor = 0

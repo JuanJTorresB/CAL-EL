@@ -55,7 +55,10 @@ def ListarVentasServicios(Datos):
         print("Tipo de Servicio: ", Servicio["Tipo"])
         print("Descripcion: ", Servicio["Descripcion"])
         print("Precio: ", Servicio["Precio"])
+        print("")
+        print("Compras Registradas:")
         for Registro in Servicio["Adquirido_por"]:
+            print("")
             print("Documento: ", Registro["Documento"])
             print("Ciudad de Adquisicion: ", Registro["Ciudad"])
             print("Fecha_Adquisicion: ", Registro["Fecha_Adquisicion"])
