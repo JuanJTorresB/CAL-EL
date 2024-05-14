@@ -423,7 +423,7 @@
                 },
                 {
                     "Documento": "1097494351",
-                    "Ciudad": "Bucaramanga",
+                    "Ciudad": "Bogota",
                     "Fecha_Adquisicion": "2024-05-13",
                     "Estado": "Recibido",
                     "Cantidad": 3
@@ -447,14 +447,14 @@
                 },
                 {
                     "Documento": "1097494374",
-                    "Ciudad": "Bucaramanga",
+                    "Ciudad": "Cali",
                     "Fecha_Adquisicion": "2024-05-12",
                     "Estado": "Enviado",
                     "Cantidad": 6
                 },
                 {
                     "Documento": "1097494351",
-                    "Ciudad": "Bucaramanga",
+                    "Ciudad": "Bogota",
                     "Fecha_Adquisicion": "2024-05-13",
                     "Estado": "Recibido",
                     "Cantidad": 1
@@ -472,7 +472,7 @@
             "Adquirido_por": [
                 {
                     "Documento": "1097494351",
-                    "Ciudad": "Bucaramanga",
+                    "Ciudad": "Cali",
                     "Fecha_Adquisicion": "2024-05-10",
                     "Estado": "Recibido",
                     "Cantidad": 1
@@ -495,7 +495,7 @@
                 },
                 {
                     "Documento": "1097494374",
-                    "Ciudad": "Floridablanca",
+                    "Ciudad": "Cali",
                     "Fecha_Adquisicion": "2024-05-13",
                     "Estado": "Inactivo",
                     "Cantidad": 1
@@ -511,7 +511,7 @@
             "Adquirido_por": [
                 {
                     "Documento": "1097494351",
-                    "Ciudad": "Bucaramanga",
+                    "Ciudad": "Cali",
                     "Fecha_Adquisicion": "2024-05-13",
                     "Estado": "Activo",
                     "Cantidad": 1
@@ -534,14 +534,14 @@
             "Adquirido_por": [
                 {
                     "Documento": "1097494351",
-                    "Ciudad": "Bucaramanga",
+                    "Ciudad": "Bogota",
                     "Fecha_Adquisicion": "2024-05-13",
                     "Estado": "Activo",
                     "Cantidad": 1
                 },
                 {
                     "Documento": "1097494374",
-                    "Ciudad": "Floridablanca",
+                    "Ciudad": "Bogota",
                     "Fecha_Adquisicion": "2024-05-13",
                     "Estado": "Inactivo",
                     "Cantidad": 1

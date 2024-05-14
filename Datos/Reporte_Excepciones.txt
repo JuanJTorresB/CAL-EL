@@ -250,3 +250,4 @@ Mensaje de Excepcion "Value Error", en la linea "42", en el archivo "Menus.py" -
 Mensaje de Excepcion "Value Error", en la linea "42", en el archivo "Menus.py" - 2024-05-14 04:30:10.210490
 Mensaje de Excepcion "Value Error", en la linea "42", en el archivo "Menus.py" - 2024-05-14 04:31:36.709444
 Mensaje de Excepcion "Value Error", en la linea "46", en el archivo "DatosYValidaciones" - 2024-05-14 04:34:44.853380
+Mensaje de Excepcion "Value Error", en la linea "42", en el archivo "Menus.py" - 2024-05-14 05:54:54.144619

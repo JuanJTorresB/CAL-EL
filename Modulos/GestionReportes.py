@@ -6,6 +6,7 @@ def ContarCantidadVendidasProducto(Datos):
     Contador = 0
     Identidicador = PedirCodigoIdentificador()
     Productos = Datos["Productos"]
+    Nombre_Producto = "(CodigoIdentificadorNoRegistrado)"
     for Produto in Productos:
         if Produto["Codigo_Identificador"] == Identidicador:
             Nombre_Producto = Produto["Nombre_Producto"]
@@ -18,6 +19,7 @@ def ContarCantidadVendidasServicio(Datos):
     Contador = 0
     Identidicador = PedirCodigoIdentificador()
     Servicios = Datos["Servicios"]
+    Nombre_Servicio = "(CodigoIdentificadorNoRegistrado)"
     for Servicio in Servicios:
         if Servicio["Codigo_Identificador"] == Identidicador:
             Nombre_Servicio = Servicio["Nombre_Servicio"]
