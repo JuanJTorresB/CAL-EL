@@ -359,6 +359,24 @@
                     }
                 ]
             }
+        },
+        {
+            "Nombre_User": "Pedrito",
+            "Documento": "7539514268",
+            "Rol": "User",
+            "Fecha_Nacimiento": "2011/12/24",
+            "Genero": "F",
+            "Ciudad": "Cali",
+            "Informacion_de_Contacto": {
+                "Direccion_User": "Avenida del Mar",
+                "Telefono_Celular": "1024305678",
+                "Correo_Electronico": "Pedrito@gmail.com"
+            },
+            "Historial": {
+                "Categoria": "Clientes Leales",
+                "Reclamaciones": [],
+                "Sugerencias": []
+            }
         }
     ],
     "Productos": [
@@ -493,7 +511,7 @@
     "Servicios": [
         {
             "Nombre_Servicio": "Conectados V4.1 Mx",
-            "Codigo_Identificador": 1,
+            "Codigo_Identificador": 8,
             "Tipo": "Prepago",
             "Descripcion": "Incluye: Llamadas y SMS Ilimitado Nal. Navegacion: 60 GB.Agotados los datos incluidos, tendran acceso a funcionalidades seleccionadas de Facebook App, Twitter y Chat de WhatsApp. No Incluye: Roaming Intnal, LDI,MMS, ni descarga de contenidos con costo, Apps incluidas: Claro Music, Claro Video ",
             "Precio": 42900,
@@ -573,6 +591,22 @@
                     "Fecha_Adquisicion": "2024-05-13",
                     "Estado": "Inactivo",
                     "Cantidad": 1
+                }
+            ]
+        },
+        {
+            "Nombre_Servicio": "Conectados V 4.3 Mx",
+            "Codigo_Identificador": 1,
+            "Tipo": "Postpago",
+            "Descripcion": "Conectados V 4.3 Mx: Cargo Fijo Mensual: $47.900. Incluye: Llamadas y SMS Ilimitado Nal. Navegacion:75GB. Agotados los datos incluidos, tendra acceso a funcionalidades seleccionadas de Facebook App, Twitter y Chat de WhatsApp. No Incluye: Roaming Intnal, LDI, MMS, ni descarga de contenidos con costo.",
+            "Precio": 48000,
+            "Adquirido_por": [
+                {
+                    "Documento": "7539514268",
+                    "Ciudad": "Cali",
+                    "Fecha_Adquisicion": "2024-05-14",
+                    "Estado": "Activo",
+                    "Cantidad": 3
                 }
             ]
         }

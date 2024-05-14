@@ -84,6 +84,7 @@ def ActualizarPerfilesUsuarios(Datos):
                 else:
                     user["Documento"] = Documento_Validado
                     print("Documento Actualizado")
+                    return Datos
             elif choise == 3:
                 user["Rol"] = Modulos.DatosYValidaciones.Validacion_Rol()
                 print("Rol Actualizado")
