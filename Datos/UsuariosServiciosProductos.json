@@ -96,6 +96,34 @@
             },
             "Historial": {
                 "Categoria": "Clientes Leales",
+                "Reclamaciones": [
+                    {
+                        "Fecha": "2024-05-13",
+                        "Descripcion": "El pedido llego con retraso y la calidad no fue la esperada."
+                    }
+                ],
+                "Sugerencias": [
+                    {
+                        "Fecha": "2024-05-13",
+                        "Descripcion": "Mejorar La Atencion al Cliente Via Linea Movil"
+                    }
+                ]
+            }
+        },
+        {
+            "Nombre_User": "Carlos",
+            "Documento": "1097494258",
+            "Rol": "User",
+            "Fecha_Nacimiento": "2001/3/2",
+            "Genero": "F",
+            "Ciudad": "Floridablanca",
+            "Informacion_de_Contacto": {
+                "Direccion_User": "Calle Buen Dia Alegria",
+                "Telefono_Celular": "2441536789",
+                "Correo_Electronico": "Juandearco@gmail.com"
+            },
+            "Historial": {
+                "Categoria": "Nuevo Cliente",
                 "Reclamaciones": [],
                 "Sugerencias": []
             }

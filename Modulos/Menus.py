@@ -1,9 +1,10 @@
-import Modulos.Catalogo
+import Modulos.CatalogoYRecomendaciones
 import Modulos.GestionProductos
 import Modulos.GestionVentas
 import Modulos.GestionReportes
 import Modulos.ManejoExcepiciones, Modulos.InicioSesion, Modulos.GestionUsuarios, Modulos.GestionServicios
 import Modulos.Menus
+import Modulos.ReclamosYSugerencias
 
 UBI_DATOS = "Datos/UsuariosServiciosProductos.json"
 
@@ -24,7 +25,7 @@ def Menu_Inicial(Datos):
         print("")
         choise = Eleccion_Numerica()           # Pide el input int
         if choise == 1:
-            Rol = Modulos.InicioSesion.SignIn()
+            Rol = Modulos.InicioSesion.SignIn(Datos)
             if  Rol == "Admin":
                 return Rol
             elif Rol == "User":
@@ -32,7 +33,8 @@ def Menu_Inicial(Datos):
             else:
                 return 0
         elif choise == 2:
-            print(2)
+            Modulos.InicioSesion.SignUp(Datos)
+            return "User"
         elif choise == 3:
             break
         elif choise == 0:
@@ -314,13 +316,16 @@ def MenuUser(Datos):
         print("(1) Ver Catalogo".center(50))
         print("")
         print("")
-        print("(2) Poner Reclamo".center(50))
+        print("(2) Ver Recomendacion".center(50))
         print("")
         print("")
-        print("(3) Poner Sugerencia".center(50))
+        print("(3) Poner Reclamo".center(50))
         print("")
         print("")
-        print("(4) SALIR".center(50))
+        print("(4) Poner Sugerencia".center(50))
+        print("")
+        print("")
+        print("(5) SALIR".center(50))
         print("")
         choise = Eleccion_Numerica()           # Pide el input int
         if choise == 1:
@@ -328,8 +333,10 @@ def MenuUser(Datos):
         elif choise == 2:
             "a"
         elif choise == 3:
-            "a"
+            Datos = Modulos.ReclamosYSugerencias.RegistrarReclamos(Datos)
         elif choise == 4:
+            Datos = Modulos.ReclamosYSugerencias.RegistrarSugerencias(Datos)
+        elif choise == 5:
             break
         elif choise == 0:
             print("")
@@ -353,9 +360,9 @@ def MenuVerCatalogo(Datos):
         print("")
         choise = Eleccion_Numerica()           # Pide el input int
         if choise == 1:
-            Modulos.Catalogo.CatalogoServicios(Datos)
+            Modulos.CatalogoYRecomendaciones.CatalogoServicios(Datos)
         elif choise == 2:
-            Modulos.Catalogo.CatalogoProductos(Datos)
+            Modulos.CatalogoYRecomendaciones.CatalogoProductos(Datos)
         elif choise == 3:
             break
         elif choise == 0:

@@ -23,3 +23,7 @@ def CatalogoProductos(Datos):
             print("Marca: ", Producto["Marca"])
             print("Precio: ", Producto["Precio"])
             print("")
+
+def Recomendaciones(Datos):
+    print("Como Producto Te Recomendamos el:")
+     
