@@ -12,6 +12,7 @@ def CrearServicios(Datos):
         Servicios["Precio"] = Modulos.DatosYValidaciones.ValidacionPrecios("Precio")
         Servicios["Adquirido_por"] = []
         Datos["Servicios"].append(Servicios)
+        print("Servicio Creado con Exito")
         return Datos
     
 def ListarServicios(Datos):
@@ -40,6 +41,7 @@ def ActualizarServicios(Datos):
                 choise = Modulos.Menus.Eleccion_Numerica()
                 if choise == 1:
                     Servicio["Nombre_Servicio"] = str(input("Nombre del Servicio\n> "))
+                    print("Nombre Actualizado")
                     return Datos
                 elif choise == 2:
                     Identidicador_Validado = PedirCodigoIdentificador()
@@ -48,15 +50,19 @@ def ActualizarServicios(Datos):
                         return Datos
                     else:
                         Servicio["Codigo_Identificador"] = Identidicador_Validado
+                        print("Codigo Identificador Actualizado")
                         return Datos
                 elif choise == 3:
                     Servicio["Tipo"] = Modulos.DatosYValidaciones.ValidacionTipoServicio()
+                    print("Tipo Actualizado con Exito")
                     return Datos
                 elif choise == 4:
                     Servicio["Descripcion"] = str(input("Ingrese una descripcion de el Servicio\n> "))
+                    print("Descripcion Actualizada con Exito")
                     return Datos
                 elif choise == 5:
                     Servicio["Precio"] = Modulos.DatosYValidaciones.ValidacionPrecios("Precio")
+                    print("Precio Actualizado con Exito")
                     return Datos
                 elif choise == 0:
                     print("")
@@ -74,6 +80,7 @@ def EliminarServicios(Datos):
         if Servicio["Codigo_Identificador"] == Identidicador:
             Servicios.remove(Servicio)
             Datos["Servicios"] = Servicios
+            print("Servicio Eliminado")
             return Datos
     print("Identidicador No ENcontrado".center(50, "="))
     return Datos
