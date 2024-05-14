@@ -21,6 +21,7 @@ def RegistrarVentaProductos(Datos):
             print("Cantidad")
             Factura["Cantidad"] = Modulos.Menus.Eleccion_Numerica()
             Producto["Adquirido_por"].append(Factura)
+            print("Venta Registrada Con Exito")
             return Datos
     print("Producto No Encontrado")
     return Datos
@@ -43,6 +44,7 @@ def RegistrarVentaServicios(Datos):
             print("Cantidad")
             Factura["Cantidad"] = Modulos.Menus.Eleccion_Numerica()
             Servicio["Adquirido_por"].append(Factura)
+            print("Venta Registrada Con Exito")
             return Datos
     print("Servicio No Encontrado")
     return Datos
@@ -98,13 +100,16 @@ def ActualizarVentasServicios(Datos):
                     choise = Modulos.Menus.Eleccion_Numerica()
                     if choise == 1:
                         Adquisiciones["Estado"] = ValidacionTipodeVentadeServicios()
+                        print("Estado Actualizado Con Exito")
                         return Datos
                     elif choise == 2:
                         print("Cantidad")
                         Adquisiciones["Cantidad"] = Modulos.Menus.Eleccion_Numerica()
+                        print("Cantidad Actualizada Con Exito")
                         return Datos
                     elif choise == 3:
                         Adquisiciones["Ciudad"] = ValidacionNoVacioLetras("Ingrese la Ciudad en la que se Realizo la Venta")
+                        print("Ciudad Actualizada Con Exito")
                         return Datos
                     elif choise == 0:
                         print("")
@@ -131,13 +136,16 @@ def ActualizarVentasProductos(Datos):
                     choise = Modulos.Menus.Eleccion_Numerica()
                     if choise == 1:
                         Adquisiciones["Estado"] = ValidacionTipodeVentadeProductos()
+                        print("Estado Actualizado Con Exito")
                         return Datos
                     elif choise == 2:
                         print("Cantidad")
                         Adquisiciones["Cantidad"] = Modulos.Menus.Eleccion_Numerica()
+                        print("Cantidad Actualizada Con Exito")
                         return Datos
                     elif choise == 3:
                         Adquisiciones["Ciudad"] = ValidacionNoVacioLetras("Ingrese la Ciudad en la que se Realizo la Venta")
+                        print("Ciudad Actualizada Con Exito")
                         return Datos
                     elif choise == 0:
                         print("")
