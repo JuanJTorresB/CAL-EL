@@ -1,3 +1,4 @@
+import Modulos.Catalogo
 import Modulos.GestionProductos
 import Modulos.GestionVentas
 import Modulos.GestionReportes
@@ -74,7 +75,7 @@ def MenuAdmin(Datos):
         print("(5) Gestionar Ventas".center(50))
         print("")
         print("")
-        print("(6) SALIR".center(50))
+        print("(8) SALIR".center(50))
         print("")
         choise = Eleccion_Numerica()           # Pide el input int
         if choise == 1:
@@ -87,7 +88,7 @@ def MenuAdmin(Datos):
             MenuReportesComerciales(Datos)
         elif choise == 5:
             MenuGestionarVentas(Datos)
-        elif choise == 6:
+        elif choise == 8:
             break
         elif choise == 0:
             print("")
@@ -125,7 +126,6 @@ def MenuGestionarUsuarios(Datos):
         elif choise == 4:
             Datos = Modulos.GestionUsuarios.EliminarPerfilesUsuarios(Datos)
         elif choise == 5:
-            print(5)
             break
         elif choise == 0:
             print("")
@@ -272,10 +272,10 @@ def MenuReportesComerciales(Datos):
         print("(4) Servicio Mas Vendido Por Ciudad".center(50))
         print("")
         print("")
-        print("(5) Actualizar Ventas Servicios".center(50))
+        print("(5) Producto Mas Popular".center(50))
         print("")
         print("")
-        print("(6) Actualizar Ventas Productos".center(50))
+        print("(6) Sercivio Mas Popular".center(50))
         print("")
         print("")
         print("(7) Volver".center(50))
@@ -290,32 +290,75 @@ def MenuReportesComerciales(Datos):
         elif choise == 4:
             Modulos.GestionReportes.ContarServiciosPorCiudad(Datos)
         elif choise == 5:
-            Modulos.GestionVentas.ActualizarVentasServicios(Datos)
+            Modulos.GestionReportes.ProductoMasPopular(Datos)
         elif choise == 6:
-            Modulos.GestionVentas.ActualizarVentasProductos(Datos)
+            Modulos.GestionReportes.ServicioMasPopular(Datos)
         elif choise == 7:
             break
         elif choise == 0:
             print("")
         else:
             print("Valor Invalido")
+
 def MenuUser(Datos):
-    print("Menu User")
-    """    print("*"*50)
+    print("*"*50)
+    print("")
+    print("BIENVENIDO USER".center(50))
+    print("")
+    while True:
         print("")
-        print("BIENVENIDO USER".center(50))
+        print("*"*50)
         print("")
-        while True:
+        print("Que Desea Hacer".center(50))
+        print("")
+        print("(1) Ver Catalogo".center(50))
+        print("")
+        print("")
+        print("(2) Poner Reclamo".center(50))
+        print("")
+        print("")
+        print("(3) Poner Sugerencia".center(50))
+        print("")
+        print("")
+        print("(4) SALIR".center(50))
+        print("")
+        choise = Eleccion_Numerica()           # Pide el input int
+        if choise == 1:
+            MenuVerCatalogo(Datos)
+        elif choise == 2:
+            "a"
+        elif choise == 3:
+            "a"
+        elif choise == 4:
+            break
+        elif choise == 0:
             print("")
-            print("*"*50)
+        else:
+            print("Valor Invalido")
+            
+def MenuVerCatalogo(Datos):
+    while True:
+        print("")
+        print("*"*50)
+        print("")
+        print("Que Desea Hacer".center(50))
+        print("")
+        print("(1) Ver Servicios por tipo (Prepago, Postpago, Fibra Optica)".center(50))
+        print("")
+        print("")
+        print("(2) Ver Productos por tipo (Celular, Televisor, Portatil)".center(50))
+        print("")
+        print("")
+        print("(3) Volver".center(50))
+        print("")
+        choise = Eleccion_Numerica()           # Pide el input int
+        if choise == 1:
+            Modulos.Catalogo.CatalogoServicios(Datos)
+        elif choise == 2:
+            Modulos.Catalogo.CatalogoProductos(Datos)
+        elif choise == 3:
+            break
+        elif choise == 0:
             print("")
-            print("Que Desea Hacer".center(50))
-            print("")
-            print("(1) SIGN IN".rjust(30))
-            print("")
-            print("")                               # Imprime las opciones del menu User
-            print("(2) SIGN UP".rjust(30))
-            print("")
-            print("")
-            print("(3) SALIR".rjust(28))
-            print("")"""
+        else:
+            print("Valor Invalido")
