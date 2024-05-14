@@ -29,14 +29,19 @@ def ContarCantidadVendidasServicio(Datos):
     
 def ContarProductosPorCiudad(Datos):
     print("Ingrese el Codigo Para Ver La Cantidad Vendida del Producto por Ciudad")
+    Codigo_Valido = False
     Contador = 0
     Ciudades = []
     Identidicador = PedirCodigoIdentificador()
     Productos = Datos["Productos"]
     for Produto in Productos:
         if Produto["Codigo_Identificador"] == Identidicador:
+            Codigo_Valido = True
             for Adquisiciones in Produto["Adquirido_por"]:
                 Ciudades.append(Adquisiciones["Ciudad"])
+    if not Codigo_Valido:
+        print("Identificador No Encontrado")
+        return
     Ciudades = set(Ciudades)
     Ciudades = list(Ciudades)
     print("¿De estas Ciudades?")
@@ -54,6 +59,7 @@ def ContarProductosPorCiudad(Datos):
 
 def ContarServiciosPorCiudad(Datos):
     print("Ingrese el Codigo Para Ver La Cantidad Vendida del Servicio por Ciudad")
+    Codigo_Valido = False
     Contador = 0
     Ciudades = []
     Identidicador = PedirCodigoIdentificador()
@@ -62,6 +68,9 @@ def ContarServiciosPorCiudad(Datos):
         if Servicio["Codigo_Identificador"] == Identidicador:
             for Adquisiciones in Servicio["Adquirido_por"]:
                 Ciudades.append(Adquisiciones["Ciudad"])
+    if not Codigo_Valido:
+        print("Identificador No Encontrado")
+        return
     Ciudades = set(Ciudades)
     Ciudades = list(Ciudades)
     print("¿De estas Ciudades?")
