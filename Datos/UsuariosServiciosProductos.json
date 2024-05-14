@@ -1,16 +1,16 @@
 {
     "Usuarios": [
         {
-            "Nombre_User": "Dani Mi Amor",
+            "Nombre_User": "Daniela Andrea",
             "Documento": "1097494374",
             "Rol": "Admin",
             "Fecha_Nacimiento": "2006/1/8",
             "Genero": "F",
             "Ciudad": "Bucaramanga",
             "Informacion_de_Contacto": {
-                "Direccion_User": "Calle 204A #40-194",
-                "Telefono_Celular": "3158572600",
-                "Correo_Electronico": "Dani@gmail.com"
+                "Direccion_User": "Calle 204A #87-246",
+                "Telefono_Celular": "5137682060",
+                "Correo_Electronico": "Daniela@gmail.com"
             },
             "Historial": {
                 "Categoria": "Clientes Leales",
@@ -36,9 +36,9 @@
             "Genero": "F",
             "Ciudad": "Bucaramanga",
             "Informacion_de_Contacto": {
-                "Direccion_User": "Calle 204A #40-194",
+                "Direccion_User": "Calle 504B #32-435",
                 "Telefono_Celular": "3204828077",
-                "Correo_Electronico": "Dani@gmail.com"
+                "Correo_Electronico": "Juan@gmail.com"
             },
             "Historial": {
                 "Categoria": "Cliente Leal",
@@ -54,9 +54,9 @@
             "Genero": "F",
             "Ciudad": "Bucaramanga",
             "Informacion_de_Contacto": {
-                "Direccion_User": "Calle 204A #40-194",
+                "Direccion_User": "Calle 354C #23-475",
                 "Telefono_Celular": "3204828077",
-                "Correo_Electronico": "Dani@gmail.com"
+                "Correo_Electronico": "Lida@gmail.com"
             },
             "Historial": {
                 "Categoria": "Cliente Leal",
@@ -72,9 +72,9 @@
             "Genero": "F",
             "Ciudad": "Bucaramanga",
             "Informacion_de_Contacto": {
-                "Direccion_User": "Calle 204A #40-194",
+                "Direccion_User": "Calle 705F #98-674",
                 "Telefono_Celular": "3204828077",
-                "Correo_Electronico": "Dani@gmail.com"
+                "Correo_Electronico": "Harley@gmail.com"
             },
             "Historial": {
                 "Categoria": "Cliente Leal",
@@ -145,6 +145,174 @@
                 "Reclamaciones": [],
                 "Sugerencias": []
             }
+        },
+        {
+            "Nombre_User": "Juan Perez",
+            "Documento": "1234567890",
+            "Rol": "Admin",
+            "Fecha_Nacimiento": "1990/01/01",
+            "Genero": "M",
+            "Ciudad": "Bogot\u00c3\u00a1",
+            "Informacion_de_Contacto": {
+                "Direccion_User": "Calle 123 #45-67",
+                "Telefono_Celular": "9087654321",
+                "Correo_Electronico": "juan.perez@example.com"
+            },
+            "Historial": {
+                "Categoria": "Nuevo Cliente",
+                "Reclamaciones": [
+                    {
+                        "Fecha": "2024/05/10",
+                        "Descripcion": "El producto lleg\u00c3\u00b3 en mal estado"
+                    }
+                ],
+                "Sugerencias": [
+                    {
+                        "Fecha": "2024/05/10",
+                        "Descripcion": "Mejorar el empaque del producto"
+                    }
+                ]
+            }
+        },
+        {
+            "Nombre_User": "Maria Rodriguez",
+            "Documento": "8097654321",
+            "Rol": "User",
+            "Fecha_Nacimiento": "1985/02/02",
+            "Genero": "F",
+            "Ciudad": "Medell\u00c3\u00adn",
+            "Informacion_de_Contacto": {
+                "Direccion_User": "Carrera 456 #78-90",
+                "Telefono_Celular": "1234567890",
+                "Correo_Electronico": "maria.rodriguez@example.com"
+            },
+            "Historial": {
+                "Categoria": "Clientes Regulares",
+                "Reclamaciones": [
+                    {
+                        "Fecha": "2024/05/11",
+                        "Descripcion": "El env\u00c3\u00ado se retras\u00c3\u00b3"
+                    }
+                ],
+                "Sugerencias": [
+                    {
+                        "Fecha": "2024/05/11",
+                        "Descripcion": "Aumentar la frecuencia de las ofertas"
+                    }
+                ]
+            }
+        },
+        {
+            "Nombre_User": "Carlos Gomez",
+            "Documento": "1029384756",
+            "Rol": "User",
+            "Fecha_Nacimiento": "1980/03/03",
+            "Genero": "Otro",
+            "Ciudad": "Cali",
+            "Informacion_de_Contacto": {
+                "Direccion_User": "Avenida 789 #01-23",
+                "Telefono_Celular": "5678901234",
+                "Correo_Electronico": "carlos.gomez@example.com"
+            },
+            "Historial": {
+                "Categoria": "Clientes Leales",
+                "Reclamaciones": [
+                    {
+                        "Fecha": "2024/05/12",
+                        "Descripcion": "El servicio al cliente podr\u00c3\u00ada ser mejor"
+                    }
+                ],
+                "Sugerencias": [
+                    {
+                        "Fecha": "2024/05/12",
+                        "Descripcion": "Implementar un programa de lealtad"
+                    }
+                ]
+            }
+        },
+        {
+            "Nombre_User": "Ana Morales",
+            "Documento": "1122334455",
+            "Rol": "Admin",
+            "Fecha_Nacimiento": "1995/04/04",
+            "Genero": "F",
+            "Ciudad": "Cartagena",
+            "Informacion_de_Contacto": {
+                "Direccion_User": "Diagonal 321 #65-43",
+                "Telefono_Celular": "5566778899",
+                "Correo_Electronico": "ana.morales@example.com"
+            },
+            "Historial": {
+                "Categoria": "Nuevo Cliente",
+                "Reclamaciones": [
+                    {
+                        "Fecha": "2024/05/13",
+                        "Descripcion": "El producto no corresponde a la descripci\u00c3\u00b3n"
+                    }
+                ],
+                "Sugerencias": [
+                    {
+                        "Fecha": "2024/05/13",
+                        "Descripcion": "Incluir m\u00c3\u00a1s detalles en la descripci\u00c3\u00b3n del producto"
+                    }
+                ]
+            }
+        },
+        {
+            "Nombre_User": "Pedro Martinez",
+            "Documento": "2233445566",
+            "Rol": "User",
+            "Fecha_Nacimiento": "1987/05/05",
+            "Genero": "M",
+            "Ciudad": "Barranquilla",
+            "Informacion_de_Contacto": {
+                "Direccion_User": "Transversal 654 #32-10",
+                "Telefono_Celular": "9988776655",
+                "Correo_Electronico": "pedro.martinez@example.com"
+            },
+            "Historial": {
+                "Categoria": "Clientes Regulares",
+                "Reclamaciones": [
+                    {
+                        "Fecha": "2024/05/14",
+                        "Descripcion": "El tiempo de entrega fue m\u00c3\u00a1s largo de lo esperado"
+                    }
+                ],
+                "Sugerencias": [
+                    {
+                        "Fecha": "2024/05/14",
+                        "Descripcion": "Ofrecer opciones de env\u00c3\u00ado m\u00c3\u00a1s r\u00c3\u00a1pidas"
+                    }
+                ]
+            }
+        },
+        {
+            "Nombre_User": "Laura Ramirez",
+            "Documento": "3344556677",
+            "Rol": "User",
+            "Fecha_Nacimiento": "1992/06/06",
+            "Genero": "Otro",
+            "Ciudad": "Santa Marta",
+            "Informacion_de_Contacto": {
+                "Direccion_User": "Circunvalar 987 #23-45",
+                "Telefono_Celular": "7766554433",
+                "Correo_Electronico": "laura.ramirez@example.com"
+            },
+            "Historial": {
+                "Categoria": "Clientes Leales",
+                "Reclamaciones": [
+                    {
+                        "Fecha": "2024/05/15",
+                        "Descripcion": "El servicio al cliente podr\u00c3\u00ada ser m\u00c3\u00a1s amigable"
+                    }
+                ],
+                "Sugerencias": [
+                    {
+                        "Fecha": "2024/05/15",
+                        "Descripcion": "Implementar un chat en vivo para soporte al cliente"
+                    }
+                ]
+            }
         }
     ],
     "Productos": [
@@ -157,14 +325,14 @@
             "Precio": 799900,
             "Adquirido_por": [
                 {
-                    "Documento": 1097494351,
+                    "Documento": "1097494351",
                     "Ciudad": "Floridablanca",
                     "Fecha_Adquisicion": "2024-05-10",
                     "Estado": "Recibido",
                     "Cantidad": 1
                 },
                 {
-                    "Documento": 1097494375,
+                    "Documento": "1097494375",
                     "Ciudad": "Bucaramanga",
                     "Fecha_Adquisicion": "2024-05-10",
                     "Estado": "Recibido",
@@ -179,7 +347,15 @@
             "Descripcion": "Aplicaciones incluidas: Netflix, YouTube, Prime video, Apple TV, Google Play Store, Google Movies, Google Games, Smart Player",
             "Marca": "Kalley",
             "Precio": 1989900,
-            "Adquirido_por": []
+            "Adquirido_por": [
+                {
+                    "Documento": "1097494375",
+                    "Ciudad": "Bogota",
+                    "Fecha_Adquisicion": "2024-05-14",
+                    "Estado": "Devuelto",
+                    "Cantidad": 4
+                }
+            ]
         },
         {
             "Nombre_Producto": "Portatil Coin R5 8GB 512GB WIN 11",
@@ -188,7 +364,24 @@
             "Descripcion": "PORTATIL COIN 15,6 AMD Ryzen 5 5500U,Radeon v7, 6 Cores12 threads MEMORIA 8GB DDR SODIMM, DISCO SSD 512GB WIN 11 HOME",
             "Marca": "Asus",
             "Precio": 1564900,
-            "Adquirido_por": []
+            "Adquirido_por": [
+                {
+                    "Documento": "2233445566",
+                    "Ciudad": "Cali",
+                    "Fecha_Adquisicion": "2024/05/08",
+                    "Estado": "Enviado",
+                    "Cantidad": 3
+                },
+                {
+                    "Documento": "1097494375",
+                    "Ciudad": "Cali",
+                    "Fecha_Adquisicion": "2024/05/08",
+                    "Estado": "Recibido",
+                    "Cantidad": 8
+                }
+                
+                
+            ]
         },
         {
             "Nombre_Producto": "Portatil Gaming Asus TufFA506NFHN003W R5 RTX",
@@ -238,7 +431,7 @@
             "Precio": 42900,
             "Adquirido_por": [
                 {
-                    "Documento": 1097494351,
+                    "Documento": "1097494351",
                     "Ciudad": "Bucaramanga",
                     "Fecha_Adquisicion": "2024-05-10",
                     "Estado": "Recibido",
@@ -254,7 +447,7 @@
             "Precio": 47900,
             "Adquirido_por": [
                 {
-                    "Documento": 1097494351,
+                    "Documento": "1097494351",
                     "Ciudad": "Bucaramanga",
                     "Fecha_Adquisicion": "2024-05-10",
                     "Estado": "Activo",
