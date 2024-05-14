@@ -17,6 +17,7 @@ def CrearProductos(Datos):
         Producto["Precio"] = Modulos.DatosYValidaciones.ValidacionPrecios("Precio")
         Producto["Adquirido_por"] = []
         Datos["Productos"].append(Producto)
+        print("Producto Creado")
         return Datos
     
 def ListarProductos(Datos):
@@ -47,6 +48,7 @@ def ActualizarProductos(Datos):
                 choise = Modulos.Menus.Eleccion_Numerica()
                 if choise == 1:
                     Producto["Nombre_Producto"] = str(input("Nombre del Producto\n> "))
+                    print("Nombre Actualizado")
                     return Datos
                 elif choise == 2:
                     Identidicador_Validado = PedirCodigoIdentificador()
@@ -55,18 +57,23 @@ def ActualizarProductos(Datos):
                         return Datos
                     else:
                         Producto["Codigo_Identificador"] = Identidicador_Validado
+                        print("Codigo Identificador Actualizado")
                         return Datos
                 elif choise == 3:
                     Producto["Tipo"] = Modulos.DatosYValidaciones.ValidacionTipodeProducto()
+                    print("Tipo de Producto Actualizado")
                     return Datos
                 elif choise == 4:
                     Producto["Descripcion"] = str(input("Ingrese una descripcion de el Producto\n> "))
+                    print("Descripcion Actualizada")
                     return Datos
                 elif choise == 5:
                     Producto["Marca"] = Modulos.DatosYValidaciones.ValidacionMarca()
+                    print("Marca Actualizada")
                     return Datos
                 elif choise == 6:
                     Producto["Precio"] = Modulos.DatosYValidaciones.ValidacionPrecios("Precio")
+                    print("Precio Actualizado")
                     return Datos
                 elif choise == 0:
                     print("")
@@ -84,6 +91,7 @@ def EliminarProducto(Datos):
         if Producto["Codigo_Identificador"] == Identidicador:
             Productos.remove(Producto)
             Datos["Productos"] = Productos
+            print("Producto Eliminado")
             return Datos
     print("Identidicador No ENcontrado".center(50, "="))
     return Datos
