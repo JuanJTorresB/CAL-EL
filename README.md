@@ -2,7 +2,7 @@
   <h1>CAL-EL</h1>
 </div>
 
-## Tabla de Contenidos 🚝
+## Tabla de Contenidos 🔗
 1. [Información General](#información-general-)
 2. [Tecnologías](#tecnologías-)
 3. [Instalación](#instalación-)
@@ -16,7 +16,7 @@ CAL-EL es un proyecto en el que mediante un sistema CRUD y manteniendo una persi
 Tecnologías usadas en este proyecto:
 - Python: Versión 3
 
-## Instalación ⬇️
+## Instalación 📦
 ```bash
 git clone <URL del repositorio>
 ```
@@ -27,6 +27,6 @@ git clone <URL del repositorio>
 
 > B
 
-## Autor 🛠
+## Autor 🐦‍🔥
 ***
-> 
+### Juan José Torres Becerra
