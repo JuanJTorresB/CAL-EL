@@ -1,34 +1,34 @@
 <div align="center">
-  <a href="">
-    <img src="">
-  </a>
-<h1 text-align="center">CAL-EL</h1>
+  <h1>CAL-EL</h1>
 </div>
-  
+
 ## Tabla de Contenidos 🚝
-1. [Información General](#Información-General)
-2. [Tecnologías](#Tecnologías)
-3. [Instalación](#Instalación)
-4. [Como Aportar](#Como-Aportar)
+1. [Información General](#información-general-)
+2. [Tecnologías](#tecnologías)
+3. [Instalación](#instalación)
+4. [Cómo Aportar](#como-aportar)
 
 ## Información General 📒
-***
-CAL-EL es un proyecto en el que mediante un sistema CRUD y manteniendo una persistensia de datos mediante asrchivos .JSON, se creo un software capas de almacenar la informacion de distintos usuarios, a la vez que crear distintos roles con diferentes funciones entre si
+CAL-EL es un proyecto en el que mediante un sistema CRUD y manteniendo una persistencia de datos mediante archivos .JSON, se creó un software capaz de almacenar la información de distintos usuarios, a la vez que crear distintos roles con diferentes funciones entre sí.
 
-## Tecnologías 🤖
-***
-Tecnologías usadas en este proyecto:
-* [Python]: Version 3
-* [B]: Version 3
+## Tecnologías
+🤖 Tecnologías usadas en este proyecto:
+- Python: Versión 3
 
-## Instalación ⬇️
-***
-```
-git clone 
+## Instalación
+⬇️
+```bash
+git clone <URL del repositorio>
 ```
 
-## Como Aportar 🛠
+## Como Aportar
+🛠
 ***
 > A
 
 > B
+
+## Autor
+🛠
+***
+> 
