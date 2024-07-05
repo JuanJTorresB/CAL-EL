@@ -18,14 +18,15 @@ Tecnologías usadas en este proyecto:
 
 ## Instalación 📦
 ```bash
-git clone <URL del repositorio>
+git clone https://github.com/JuanJTorresB/CAL-EL.git
 ```
+Ejecuta el archivo Main.py desde Vscode
 
 ## Como Aportar 🛠
 ***
-> A
+> Restructurar los archivos Json
 
-> B
+> Crear CRUDS para mas productos o servicios
 
 ## Autor 🐦‍🔥
 ***
