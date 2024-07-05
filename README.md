@@ -7,6 +7,7 @@
 2. [Tecnologías](#tecnologías-)
 3. [Instalación](#instalación-)
 4. [Cómo Aportar](#como-aportar-)
+5. [Autor](#autor-)
 
 ## Información General 📒
 CAL-EL es un proyecto en el que mediante un sistema CRUD y manteniendo una persistencia de datos mediante archivos .JSON, se creó un software capaz de almacenar la información de distintos usuarios, a la vez que crear distintos roles con diferentes funciones entre sí.
